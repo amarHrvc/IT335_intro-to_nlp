@@ -50,3 +50,84 @@ Some of research questions that arise are:
 
 We plan to use [osunlp/TravelPlanner · Datasets at Hugging Face](https://huggingface.co/datasets/osunlp/TravelPlanner) as benchmark to compare output from my system to data provided by osunlp. All LLMs are trained with actual data to fixed point in time, they essentially operate in closed information space. To overcome this constraint at some point of TIG workflow there is possibility of including real world api’s for collecting additional information (flight data, local events,  restaurant ratings and similar)
 
+#### Dataset information
+
+Files in dataset:
+
+* train.csv (45 rows, 12 columns)  
+* validation.csv (180 rows, 11 columns)  
+* test.csv (1000 rows, 7 columns)
+
+Structure:  
+Train Dataset (45 rows) \- 12 columns:
+
+* org \- Origin city  
+* dest \- Destination city  
+* days \- Trip duration (3-7 days)  
+* visiting\_city\_number \- Number of cities to visit  
+* date \- Start date   
+* people\_number \- Number of travelers  
+* local\_constraint \- constraints (for example: cuisine preferences)  
+* budget \- Budget amount  
+* query \- Natural language travel request  
+* level \- Difficulty level (easy/medium/hard)  
+* annotated\_plan \- Expert-annotated itinerary  
+* reference\_information \- Reference data (JSON format)
+
+Validation Dataset (180 rows)
+
+* 11 Columns: Same as train, there is no annotated\_plan
+
+Test Dataset (1000 rows)  
+7 Columns: Only core fields:
+
+* org, dest, days, date, query, level, reference\_information
+
+#### Data Preprocessing
+
+For preprocessing data TravelPlannerProcessor script is uses. By using this script we  have performed following:
+
+* Text normalization  
+* City name standardization  
+* Date parsing  
+* Handling of missing values  
+* Included additional fields 
+
+| New Column 		| Calculation 			| Purpose |  
+|------------		 |-------------			|---------|  
+| \`query\_normalized\`	 | Cleaned query text 		| For NLP processing |  
+| \`query\_length\_words\` 	 | Word count 			| Measure query complexity |  
+| \`query\_length\_chars\`	 | Character count 		| Text length analysis |  
+| \`org\_normalized\` 	 | Standardized origin 		| Consistent city names |  
+| \`dest\_normalized\` 	 | Standardized destination 	| Consistent city names |  
+| \`data\_split\` 	 	 | train/validation/test 		| Track data source |
+
+Detailed steps can be found in jupiter notebook. 
+
+#### Literature review
+
+As we already explained planning a trip includes coordination of multiple activities while keeping in mind constraints, schedules and logistics. Recent advances in AI LLM’s have opened possibility of automatization of a given process.
+
+First paper TravelPlanner \-arXiv gives us benchmark for travel planning based on LLM. IT has a quite large dataset (over 4 million  entries) and it evaluates three constraint types. Paper primarily reveals AI limitations where model achieves only 0.6 % passing rate \-  AI agent was generating some kind of plan  but it was violating constraints all the time.
+
+LARA (2024) introduces a new framework approach in intent classification with its three stage pipeline. This approach achieved \+3.67% accuracy over baseline. 
+
+LLM-planner (2023)  demonstrates few-shot planning for embodied agents, achieving 35.0% success on ALFRED benchmark .
+
+Domain-Specific NER for TIG adopted hybrid approach: spaCy extracts common entities with custom patterns for travel specific types.
+
+It seems that current literature suggests that automated TIG is largely unresolved despite LLM advances. Successful patterns are showing in hybrid approaches. 
+
+Literature References  
+\[1\] J. Xie, K. Zhang, J. Chen, et al., "TravelPlanner: A Benchmark for Real-World Planning with Language Agents," arXiv:2402.01622, 2024\.
+
+\[2\] J. Liu, Y. K. Tan, B. Fu, and K. H. Lim, "LARA: Linguistic-Adaptive Retrieval-Augmentation for Multi-Turn Intent Classification," in Proc. EMNLP 2024, pp. 1096–1106.
+
+\[3\] C. H. Song, J. Wu, C. Washington, et al., "LLM-Planner: Few-Shot Grounded Planning for Embodied Agents with Large Language Models," in Proc. ICCV, 2023\.
+
+\[4\] A. S. Kulkarni, et al., "Named Entity Recognition for Travel and Tourism Domain," Asian J. Information Technology, vol. 15, no. 23, pp. 4309-4317, 2016\.
+
+\[5\] "Intent Classification for Dialogue Utterances," Sentic.net, 2020\.
+
+\[6\] "Named Entity Recognition using spaCy," GeeksforGeeks, 2024\.
+
