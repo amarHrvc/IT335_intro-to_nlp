@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="27.0.3">
+  <diagram name="Page-1" id="c3Qc5IZ2AIqHh8GrxtIY">
+    <mxGraphModel dx="729" dy="1109" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="J1ok1xSDoUInH5yogWYI-10" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=0.3;" vertex="1" parent="1">
+          <mxGeometry x="200.5" y="100" width="450" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="J1ok1xSDoUInH5yogWYI-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1ok1xSDoUInH5yogWYI-1" target="J1ok1xSDoUInH5yogWYI-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="J1ok1xSDoUInH5yogWYI-1" value="User input&lt;br&gt;&lt;font style=&quot;color: rgb(102, 102, 102);&quot; size=&quot;1&quot;&gt;&lt;i&gt;(plan a 3 day trip to Rome for 1000 $)&lt;/i&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="333" y="180" width="185" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="J1ok1xSDoUInH5yogWYI-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1ok1xSDoUInH5yogWYI-2" target="J1ok1xSDoUInH5yogWYI-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="J1ok1xSDoUInH5yogWYI-2" value="Query parser&lt;br&gt;&lt;i style=&quot;color: light-dark(rgb(102, 102, 102), rgb(149, 149, 149)); font-size: x-small; background-color: transparent;&quot;&gt;&amp;nbsp;- Extract : cities, dates, budget&lt;/i&gt;&lt;div&gt;&lt;i style=&quot;color: light-dark(rgb(102, 102, 102), rgb(149, 149, 149)); font-size: x-small; background-color: transparent;&quot;&gt;Tools: spaCy, LLM&amp;nbsp;&lt;/i&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="330" y="320" width="191" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="J1ok1xSDoUInH5yogWYI-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1ok1xSDoUInH5yogWYI-4" target="J1ok1xSDoUInH5yogWYI-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="J1ok1xSDoUInH5yogWYI-4" value="&lt;span style=&quot;background-color: transparent;&quot;&gt;Retrieval module&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;i style=&quot;color: light-dark(rgb(102, 102, 102), rgb(149, 149, 149)); font-size: x-small; background-color: transparent;&quot;&gt; - Find similar queries inn TravelPlanner&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i style=&quot;color: light-dark(rgb(102, 102, 102), rgb(149, 149, 149)); font-size: x-small; background-color: transparent;&quot;&gt;Get example itineraries&lt;/i&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="330" y="460" width="191" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="J1ok1xSDoUInH5yogWYI-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1ok1xSDoUInH5yogWYI-6" target="J1ok1xSDoUInH5yogWYI-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="J1ok1xSDoUInH5yogWYI-6" value="&lt;span style=&quot;background-color: transparent;&quot;&gt;Itinerary Planner&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;i style=&quot;color: light-dark(rgb(102, 102, 102), rgb(149, 149, 149)); font-size: x-small; background-color: transparent;&quot;&gt; - LLM with examples&lt;br&gt;-&amp;nbsp; generate plan by days&lt;/i&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="330" y="600" width="191" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="J1ok1xSDoUInH5yogWYI-8" value="&lt;span style=&quot;background-color: transparent;&quot;&gt;Validation&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;font size=&quot;1&quot; color=&quot;#666666&quot;&gt;&lt;i&gt;- check budget, dates ...&lt;br&gt;Optional: validate by rules&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="330" y="740" width="191" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

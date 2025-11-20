@@ -131,3 +131,6 @@ Literature References
 
 \[6\] "Named Entity Recognition using spaCy," GeeksforGeeks, 2024\.
 
+
+#### TIG workflow
+![alt text](milestone3/diagrams/TIG_workflow.jpg)
