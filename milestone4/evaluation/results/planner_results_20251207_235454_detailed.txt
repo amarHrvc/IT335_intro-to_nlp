@@ -1,0 +1,1590 @@
+================================================================================
+PLANNER EVALUATION - DETAILED DEBUG REPORT
+================================================================================
+
+Generated: December 07, 2025 at 11:54 PM
+
+📊 SUMMARY:
+   Total Queries: 10
+   Complete (5/5): 3
+   Partial (3-4/5): 7
+   Failed (0-2/5): 0
+
+
+================================================================================
+QUERY #1
+================================================================================
+
+📋 QUERY DETAILS:
+   Destination: Orlando
+   Duration: 3 days
+   Budget: $1800
+   People: 1
+
+--------------------------------------------------------------------------------
+🔍 DEBUG INFORMATION:
+--------------------------------------------------------------------------------
+
+📤 LLM PROMPT:
+--------------------------------------------------------------------------------
+You are an expert travel planner. Based on the following examples, create a detailed itinerary for the given query.
+
+EXAMPLES:
+==================================================
+
+Example 1:
+Query: "Please help in creating a travel plan for two people departing from Washington and heading to Orlando for three days, between March 15th and March 17th, 2022. The budget for this trip is $2,000 and we would prefer to have private rooms for our stay."
+Destination: Orlando
+Duration: 3 days
+Plan: [{'org': 'Washington', 'dest': 'Orlando', 'days': 3, 'visiting_city_number': 1, 'date': ['2022-03-15', '2022-03-16', '2022-03-17'], 'people_number': 2, 'local_constraint': {'house rule': None, 'cuisin...
+
+==================================================
+NEW QUERY:
+Destination: Orlando
+Duration: 3 days
+Budget: $1800
+People: 1
+
+==================================================
+IMPORTANT: Return ONLY valid JSON in this EXACT format (no markdown, no code blocks):
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "...", "cost": "$X"},
+    "Lunch": {"time": "12:00", "restaurant": "...", "cost": "$X"},
+    "Afternoon": {"time": "14:00", "activity": "...", "cost": "$X"},
+    "Dinner": {"time": "19:00", "restaurant": "...", "cost": "$X"},
+    "Accommodation": "Hotel Name ($X/night)"
+  },
+  "Day 2": {...},
+  ...
+  "Total Cost": "$XXXX"
+}
+
+Provide a detailed day-by-day itinerary with activities, meals, and accommodations.
+
+(Length: 1430 chars)
+
+📥 RAW LLM RESPONSE:
+--------------------------------------------------------------------------------
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "Arrive in Orlando, check into hotel", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "The Boathouse", "cost": "$25"},
+    "Afternoon": {"time": "14:00", "activity": "Visit Disney Springs", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Taverna Opa", "cost": "$40"},
+    "Accommodation": "Holiday Inn Orlando ($150/night)"
+  },
+  "Day 2": {
+    "Morning": {"time": "08:00", "activity": "Breakfast at hotel", "cost": "$15"},
+    "Lunch": {"time": "11:00", "restaurant": "Lunch at Epcot's World Showcase", "cost": "$30"},
+    "Afternoon": {"time": "13:00", "activity": "Explore Epcot Theme Park", "cost": "$120"},
+    "Dinner": {"time": "18:00", "restaurant": "Dinner at Le Cellier Steakhouse", "cost": "$60"},
+    "Accommodation": "Holiday Inn Orlando ($150/night)"
+  },
+  "Day 3": {
+    "Morning": {"time": "09:00", "activity": "Visit Universal Studios", "cost": "$110"},
+    "Lunch": {"time": "12:00", "restaurant": "Three Broomsticks", "cost": "$25"},
+    "Afternoon": {"time": "14:00", "activity": "Explore The Wizarding World of Harry Potter", "cost": "$0"},
+    "Dinner": {"time": "18:00", "restaurant": "Hard Rock Cafe", "cost": "$45"},
+    "Evening": {"time": "20:00", "activity": "Return to hotel and pack", "cost": "$0"},
+    "Accommodation": "Holiday Inn Orlando ($150/night)"
+  },
+  "Total Cost": "$1135"
+}
+
+(Length: 1405 chars)
+
+⚙️  PROCESSED RESPONSE:
+--------------------------------------------------------------------------------
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "Arrive in Orlando, check into hotel", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "The Boathouse", "cost": "$25"},
+    "Afternoon": {"time": "14:00", "activity": "Visit Disney Springs", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Taverna Opa", "cost": "$40"},
+    "Accommodation": "Holiday Inn Orlando ($150/night)"
+  },
+  "Day 2": {
+    "Morning": {"time": "08:00", "activity": "Breakfast at hotel", "cost": "$15"},
+    "Lunch": {"time": "11:00", "restaurant": "Lunch at Epcot's World Showcase", "cost": "$30"},
+    "Afternoon": {"time": "13:00", "activity": "Explore Epcot Theme Park", "cost": "$120"},
+    "Dinner": {"time": "18:00", "restaurant": "Dinner at Le Cellier Steakhouse", "cost": "$60"},
+    "Accommodation": "Holiday Inn Orlando ($150/night)"
+  },
+  "Day 3": {
+    "Morning": {"time": "09:00", "activity": "Visit Universal Studios", "cost": "$110"},
+    "Lunch": {"time": "12:00", "restaurant": "Three Broomsticks", "cost": "$25"},
+    "Afternoon": {"time": "14:00", "activity": "Explore The Wizarding World of Harry Potter", "cost": "$0"},
+    "Dinner": {"time": "18:00", "restaurant": "Hard Rock Cafe", "cost": "$45"},
+    "Evening": {"time": "20:00", "activity": "Return to hotel and pack", "cost": "$0"},
+    "Accommodation": "Holiday Inn Orlando ($150/night)"
+  },
+  "Total Cost": "$1135"
+}
+
+(Length: 1405 chars)
+
+--------------------------------------------------------------------------------
+✅ CRITERIA EVALUATION:
+--------------------------------------------------------------------------------
+
+   1. Itinerary Generated: ✓ PASS
+   2. Correct Number of Days: ✓ PASS
+   3. Within Budget: ✓ PASS
+   4. Correct People Count: ✓ PASS
+   5. Contains Destination: ✓ PASS
+
+   Total: 5/5 criteria met
+
+--------------------------------------------------------------------------------
+📊 FINAL VERDICT: 🎉 COMPLETE
+--------------------------------------------------------------------------------
+
+
+================================================================================
+QUERY #2
+================================================================================
+
+📋 QUERY DETAILS:
+   Destination: California
+   Duration: 7 days
+   Budget: $5800
+   People: 1
+
+--------------------------------------------------------------------------------
+🔍 DEBUG INFORMATION:
+--------------------------------------------------------------------------------
+
+📤 LLM PROMPT:
+--------------------------------------------------------------------------------
+You are an expert travel planner. Based on the following examples, create a detailed itinerary for the given query.
+
+EXAMPLES:
+==================================================
+
+Example 1:
+Query: "I need help crafting a 7-day travel plan for two individuals, departing from St. Louis and intending to visit 3 separate cities in California. The travel dates are from March 17th to March 23rd, 2022. We have a budget of $9,500 to cover all expenses. As for dining preferences, we are particularly fond of American and Chinese cuisines."
+Destination: California
+Duration: 7 days
+Plan: [{'org': 'St. Louis', 'dest': 'California', 'days': 7, 'visiting_city_number': 3, 'date': ['2022-03-17', '2022-03-18', '2022-03-19', '2022-03-20', '2022-03-21', '2022-03-22', '2022-03-23'], 'people_nu...
+
+==================================================
+NEW QUERY:
+Destination: California
+Duration: 7 days
+Budget: $5800
+People: 1
+
+==================================================
+IMPORTANT: Return ONLY valid JSON in this EXACT format (no markdown, no code blocks):
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "...", "cost": "$X"},
+    "Lunch": {"time": "12:00", "restaurant": "...", "cost": "$X"},
+    "Afternoon": {"time": "14:00", "activity": "...", "cost": "$X"},
+    "Dinner": {"time": "19:00", "restaurant": "...", "cost": "$X"},
+    "Accommodation": "Hotel Name ($X/night)"
+  },
+  "Day 2": {...},
+  ...
+  "Total Cost": "$XXXX"
+}
+
+Provide a detailed day-by-day itinerary with activities, meals, and accommodations.
+
+(Length: 1523 chars)
+
+📥 RAW LLM RESPONSE:
+--------------------------------------------------------------------------------
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "Flight from St. Louis to San Francisco", "cost": "$350"},
+    "Lunch": {"time": "12:00", "restaurant": "Boudin Bakery", "cost": "$25"},
+    "Afternoon": {"time": "14:00", "activity": "Visit to Golden Gate Park", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Sam Wo Restaurant", "cost": "$30"},
+    "Accommodation": "Hotel Nikko San Francisco ($200/night)"
+  },
+  "Day 2": {
+    "Morning": {"time": "09:00", "activity": "Tour of Alcatraz Island", "cost": "$40"},
+    "Lunch": {"time": "12:00", "restaurant": "House of Nanking", "cost": "$30"},
+    "Afternoon": {"time": "14:00", "activity": "Explore Fisherman's Wharf", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Fog Harbor Fish House", "cost": "$50"},
+    "Accommodation": "Hotel Nikko San Francisco ($200/night)"
+  },
+  "Day 3": {
+    "Morning": {"time": "09:00", "activity": "Drive to Yosemite National Park", "cost": "$60"},
+    "Lunch": {"time": "12:00", "restaurant": "The Majestic Yosemite Dining Room", "cost": "$40"},
+    "Afternoon": {"time": "14:00", "activity": "Hiking in Yosemite", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Base Camp Eatery", "cost": "$25"},
+    "Accommodation": "Yosemite Valley Lodge ($150/night)"
+  },
+  "Day 4": {
+    "Morning": {"time": "09:00", "activity": "Visit Yosemite Falls", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "Degnan's Kitchen", "cost": "$20"},
+    "Afternoon": {"time": "14:00", "activity": "Drive to Los Angeles", "cost": "$60"},
+    "Dinner": {"time": "19:00", "restaurant": "Chinatown Express", "cost": "$20"},
+    "Accommodation": "The Hollywood Roosevelt ($180/night)"
+  },
+  "Day 5": {
+    "Morning": {"time": "09:00", "activity": "Visit to Griffith Observatory", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "In-N-Out Burger", "cost": "$15"},
+    "Afternoon": {"time": "14:00", "activity": "Tour of Warner Bros. Studio", "cost": "$69"},
+    "Dinner": {"time": "19:00", "restaurant": "Pink's Hot Dogs", "cost": "$15"},
+    "Accommodation": "The Hollywood Roosevelt ($180/night)"
+  },
+  "Day 6": {
+    "Morning": {"time": "09:00", "activity": "Drive to Santa Monica Beach", "cost": "$15"},
+    "Lunch": {"time": "12:00", "restaurant": "The Lobster", "cost": "$50"},
+    "Afternoon": {"time": "14:00", "activity": "Relax at Santa Monica Pier", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Genghis Cohen", "cost": "$40"},
+    "Accommodation": "The Hollywood Roosevelt ($180/night)"
+  },
+  "Day 7": {
+    "Morning": {"time": "09:00", "activity": "Return flight to St. Louis", "cost": "$350"},
+    "Lunch": {"time": "12:00", "restaurant": "Airport Cafe", "cost": "$20"},
+    "Afternoon": {"time": "14:00", "activity": "Travel back home", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Home-cooked meal", "cost": "$0"},
+    "Accommodation": "Home"
+  },
+  "Total Cost": "$5799"
+}
+
+(Length: 2960 chars)
+
+⚙️  PROCESSED RESPONSE:
+--------------------------------------------------------------------------------
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "Flight from St. Louis to San Francisco", "cost": "$350"},
+    "Lunch": {"time": "12:00", "restaurant": "Boudin Bakery", "cost": "$25"},
+    "Afternoon": {"time": "14:00", "activity": "Visit to Golden Gate Park", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Sam Wo Restaurant", "cost": "$30"},
+    "Accommodation": "Hotel Nikko San Francisco ($200/night)"
+  },
+  "Day 2": {
+    "Morning": {"time": "09:00", "activity": "Tour of Alcatraz Island", "cost": "$40"},
+    "Lunch": {"time": "12:00", "restaurant": "House of Nanking", "cost": "$30"},
+    "Afternoon": {"time": "14:00", "activity": "Explore Fisherman's Wharf", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Fog Harbor Fish House", "cost": "$50"},
+    "Accommodation": "Hotel Nikko San Francisco ($200/night)"
+  },
+  "Day 3": {
+    "Morning": {"time": "09:00", "activity": "Drive to Yosemite National Park", "cost": "$60"},
+    "Lunch": {"time": "12:00", "restaurant": "The Majestic Yosemite Dining Room", "cost": "$40"},
+    "Afternoon": {"time": "14:00", "activity": "Hiking in Yosemite", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Base Camp Eatery", "cost": "$25"},
+    "Accommodation": "Yosemite Valley Lodge ($150/night)"
+  },
+  "Day 4": {
+    "Morning": {"time": "09:00", "activity": "Visit Yosemite Falls", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "Degnan's Kitchen", "cost": "$20"},
+    "Afternoon": {"time": "14:00", "activity": "Drive to Los Angeles", "cost": "$60"},
+    "Dinner": {"time": "19:00", "restaurant": "Chinatown Express", "cost": "$20"},
+    "Accommodation": "The Hollywood Roosevelt ($180/night)"
+  },
+  "Day 5": {
+    "Morning": {"time": "09:00", "activity": "Visit to Griffith Observatory", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "In-N-Out Burger", "cost": "$15"},
+    "Afternoon": {"time": "14:00", "activity": "Tour of Warner Bros. Studio", "cost": "$69"},
+    "Dinner": {"time": "19:00", "restaurant": "Pink's Hot Dogs", "cost": "$15"},
+    "Accommodation": "The Hollywood Roosevelt ($180/night)"
+  },
+  "Day 6": {
+    "Morning": {"time": "09:00", "activity": "Drive to Santa Monica Beach", "cost": "$15"},
+    "Lunch": {"time": "12:00", "restaurant": "The Lobster", "cost": "$50"},
+    "Afternoon": {"time": "14:00", "activity": "Relax at Santa Monica Pier", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Genghis Cohen", "cost": "$40"},
+    "Accommodation": "The Hollywood Roosevelt ($180/night)"
+  },
+  "Day 7": {
+    "Morning": {"time": "09:00", "activity": "Return flight to St. Louis", "cost": "$350"},
+    "Lunch": {"time": "12:00", "restaurant": "Airport Cafe", "cost": "$20"},
+    "Afternoon": {"time": "14:00", "activity": "Travel back home", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Home-cooked meal", "cost": "$0"},
+    "Accommodation": "Home"
+  },
+  "Total Cost": "$5799"
+}
+
+(Length: 2960 chars)
+
+--------------------------------------------------------------------------------
+✅ CRITERIA EVALUATION:
+--------------------------------------------------------------------------------
+
+   1. Itinerary Generated: ✓ PASS
+   2. Correct Number of Days: ✓ PASS
+   3. Within Budget: ✓ PASS
+   4. Correct People Count: ✓ PASS
+   5. Contains Destination: ✗ FAIL
+
+   Total: 4/5 criteria met
+
+--------------------------------------------------------------------------------
+❌ FAILURE REASONS:
+--------------------------------------------------------------------------------
+
+   • Wrong destination (expected Kona)
+
+--------------------------------------------------------------------------------
+📊 FINAL VERDICT: ⚠️ PARTIAL
+--------------------------------------------------------------------------------
+
+
+================================================================================
+QUERY #3
+================================================================================
+
+📋 QUERY DETAILS:
+   Destination: Texas
+   Duration: 5 days
+   Budget: $2900
+   People: 2
+
+--------------------------------------------------------------------------------
+🔍 DEBUG INFORMATION:
+--------------------------------------------------------------------------------
+
+📤 LLM PROMPT:
+--------------------------------------------------------------------------------
+You are an expert travel planner. Based on the following examples, create a detailed itinerary for the given query.
+
+EXAMPLES:
+==================================================
+
+Example 1:
+Query: "Could you assist in crafting a travel itinerary for a 5-day, single-person trip departing from Orlando and touring 2 cities in Texas? The travel dates should range from March 10th to March 14th, 2022, and the entire travel budget is $3,100."
+Destination: Texas
+Duration: 5 days
+Plan: [{'org': 'Orlando', 'dest': 'Texas', 'days': 5, 'visiting_city_number': 2, 'date': ['2022-03-10', '2022-03-11', '2022-03-12', '2022-03-13', '2022-03-14'], 'people_number': 1, 'local_constraint': {'hou...
+
+Example 2:
+Query: "Could you help create a 5-day travel itinerary, starting from Baton Rouge moving to 2 cities in Texas between March 1st and March 5th, 2022? This trip is for a solo traveler, who has set a budget of $2,300."
+Destination: Texas
+Duration: 5 days
+Plan: [{'org': 'Baton Rouge', 'dest': 'Texas', 'days': 5, 'visiting_city_number': 2, 'date': ['2022-03-01', '2022-03-02', '2022-03-03', '2022-03-04', '2022-03-05'], 'people_number': 1, 'local_constraint': {...
+
+Example 3:
+Query: "Could you formulate a 5-day travel plan for a group of 5? We'll be starting in Denver and wish to visit 2 cities in Texas from March 8th to March 12th, 2022. We have a budget of $7,100. Our accommodations must allow smoking. In terms of food, we are open to a variety of cuisines, including American, French, Mediterranean, and Italian. It's imperative that our journey does not involve any flights for transportation."
+Destination: Texas
+Duration: 5 days
+Plan: [{'org': 'Denver', 'dest': 'Texas', 'days': 5, 'visiting_city_number': 2, 'date': ['2022-03-08', '2022-03-09', '2022-03-10', '2022-03-11', '2022-03-12'], 'people_number': 5, 'local_constraint': {'hous...
+
+==================================================
+NEW QUERY:
+Destination: Texas
+Duration: 5 days
+Budget: $2900
+People: 2
+
+==================================================
+IMPORTANT: Return ONLY valid JSON in this EXACT format (no markdown, no code blocks):
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "...", "cost": "$X"},
+    "Lunch": {"time": "12:00", "restaurant": "...", "cost": "$X"},
+    "Afternoon": {"time": "14:00", "activity": "...", "cost": "$X"},
+    "Dinner": {"time": "19:00", "restaurant": "...", "cost": "$X"},
+    "Accommodation": "Hotel Name ($X/night)"
+  },
+  "Day 2": {...},
+  ...
+  "Total Cost": "$XXXX"
+}
+
+Provide a detailed day-by-day itinerary with activities, meals, and accommodations.
+
+(Length: 2577 chars)
+
+📥 RAW LLM RESPONSE:
+--------------------------------------------------------------------------------
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "Flight from home city to Austin, Texas", "cost": "$200"},
+    "Lunch": {"time": "12:00", "restaurant": "Franklin Barbecue", "cost": "$25"},
+    "Afternoon": {"time": "14:00", "activity": "Visit the Texas State Capitol", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Uchi Austin", "cost": "$80"},
+    "Accommodation": "The Driskill Hotel ($250/night)"
+  },
+  "Day 2": {
+    "Morning": {"time": "09:00", "activity": "Explore Zilker Metropolitan Park", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "Easy Tiger", "cost": "$30"},
+    "Afternoon": {"time": "14:00", "activity": "Tour at the Bullock Texas State History Museum", "cost": "$12"},
+    "Dinner": {"time": "19:00", "restaurant": "Emmer & Rye", "cost": "$75"},
+    "Accommodation": "The Driskill Hotel ($250/night)"
+  },
+  "Day 3": {
+    "Morning": {"time": "09:00", "activity": "Drive to San Antonio", "cost": "$50 (rental car and gas)"},
+    "Lunch": {"time": "12:00", "restaurant": "Mi Tierra Cafe", "cost": "$40"},
+    "Afternoon": {"time": "14:00", "activity": "Tour The Alamo", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Biga on the Banks", "cost": "$90"},
+    "Accommodation": "Hotel Valencia Riverwalk ($220/night)"
+  },
+  "Day 4": {
+    "Morning": {"time": "09:00", "activity": "Visit San Antonio River Walk", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "Casa Rio", "cost": "$35"},
+    "Afternoon": {"time": "14:00", "activity": "Explore San Antonio Museum of Art", "cost": "$20"},
+    "Dinner": {"time": "19:00", "restaurant": "The Esquire Tavern", "cost": "$70"},
+    "Accommodation": "Hotel Valencia Riverwalk ($220/night)"
+  },
+  "Day 5": {
+    "Morning": {"time": "09:00", "activity": "Drive back to Austin", "cost": "$50 (rental car and gas)"},
+    "Lunch": {"time": "12:00", "restaurant": "Torchy's Tacos", "cost": "$20"},
+    "Afternoon": {"time": "14:00", "activity": "Relax at Barton Springs Pool", "cost": "$5"},
+    "Dinner": {"time": "19:00", "restaurant": "Olamaie", "cost": "$100"},
+    "Accommodation": "Flight back to home city", "cost": "$200"
+  },
+  "Total Cost": "$2887"
+}
+
+(Length: 2182 chars)
+
+⚙️  PROCESSED RESPONSE:
+--------------------------------------------------------------------------------
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "Flight from home city to Austin, Texas", "cost": "$200"},
+    "Lunch": {"time": "12:00", "restaurant": "Franklin Barbecue", "cost": "$25"},
+    "Afternoon": {"time": "14:00", "activity": "Visit the Texas State Capitol", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Uchi Austin", "cost": "$80"},
+    "Accommodation": "The Driskill Hotel ($250/night)"
+  },
+  "Day 2": {
+    "Morning": {"time": "09:00", "activity": "Explore Zilker Metropolitan Park", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "Easy Tiger", "cost": "$30"},
+    "Afternoon": {"time": "14:00", "activity": "Tour at the Bullock Texas State History Museum", "cost": "$12"},
+    "Dinner": {"time": "19:00", "restaurant": "Emmer & Rye", "cost": "$75"},
+    "Accommodation": "The Driskill Hotel ($250/night)"
+  },
+  "Day 3": {
+    "Morning": {"time": "09:00", "activity": "Drive to San Antonio", "cost": "$50 (rental car and gas)"},
+    "Lunch": {"time": "12:00", "restaurant": "Mi Tierra Cafe", "cost": "$40"},
+    "Afternoon": {"time": "14:00", "activity": "Tour The Alamo", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Biga on the Banks", "cost": "$90"},
+    "Accommodation": "Hotel Valencia Riverwalk ($220/night)"
+  },
+  "Day 4": {
+    "Morning": {"time": "09:00", "activity": "Visit San Antonio River Walk", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "Casa Rio", "cost": "$35"},
+    "Afternoon": {"time": "14:00", "activity": "Explore San Antonio Museum of Art", "cost": "$20"},
+    "Dinner": {"time": "19:00", "restaurant": "The Esquire Tavern", "cost": "$70"},
+    "Accommodation": "Hotel Valencia Riverwalk ($220/night)"
+  },
+  "Day 5": {
+    "Morning": {"time": "09:00", "activity": "Drive back to Austin", "cost": "$50 (rental car and gas)"},
+    "Lunch": {"time": "12:00", "restaurant": "Torchy's Tacos", "cost": "$20"},
+    "Afternoon": {"time": "14:00", "activity": "Relax at Barton Springs Pool", "cost": "$5"},
+    "Dinner": {"time": "19:00", "restaurant": "Olamaie", "cost": "$100"},
+    "Accommodation": "Flight back to home city", "cost": "$200"
+  },
+  "Total Cost": "$2887"
+}
+
+(Length: 2182 chars)
+
+--------------------------------------------------------------------------------
+✅ CRITERIA EVALUATION:
+--------------------------------------------------------------------------------
+
+   1. Itinerary Generated: ✓ PASS
+   2. Correct Number of Days: ✓ PASS
+   3. Within Budget: ✓ PASS
+   4. Correct People Count: ✗ FAIL
+   5. Contains Destination: ✓ PASS
+
+   Total: 4/5 criteria met
+
+--------------------------------------------------------------------------------
+❌ FAILURE REASONS:
+--------------------------------------------------------------------------------
+
+   • Wrong people count (expected 2)
+
+--------------------------------------------------------------------------------
+📊 FINAL VERDICT: ⚠️ PARTIAL
+--------------------------------------------------------------------------------
+
+
+================================================================================
+QUERY #4
+================================================================================
+
+📋 QUERY DETAILS:
+   Destination: Los Angeles
+   Duration: 3 days
+   Budget: $1700
+   People: 2
+
+--------------------------------------------------------------------------------
+🔍 DEBUG INFORMATION:
+--------------------------------------------------------------------------------
+
+📤 LLM PROMPT:
+--------------------------------------------------------------------------------
+You are an expert travel planner. Based on the following examples, create a detailed itinerary for the given query.
+
+==================================================
+NEW QUERY:
+Destination: Los Angeles
+Duration: 3 days
+Budget: $1700
+People: 2
+
+==================================================
+IMPORTANT: Return ONLY valid JSON in this EXACT format (no markdown, no code blocks):
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "...", "cost": "$X"},
+    "Lunch": {"time": "12:00", "restaurant": "...", "cost": "$X"},
+    "Afternoon": {"time": "14:00", "activity": "...", "cost": "$X"},
+    "Dinner": {"time": "19:00", "restaurant": "...", "cost": "$X"},
+    "Accommodation": "Hotel Name ($X/night)"
+  },
+  "Day 2": {...},
+  ...
+  "Total Cost": "$XXXX"
+}
+
+Provide a detailed day-by-day itinerary with activities, meals, and accommodations.
+
+(Length: 853 chars)
+
+📥 RAW LLM RESPONSE:
+--------------------------------------------------------------------------------
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "Visit Griffith Observatory and hike to the Hollywood Sign", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "The Alcove Cafe & Bakery", "cost": "$50"},
+    "Afternoon": {"time": "14:00", "activity": "Explore the Los Angeles County Museum of Art", "cost": "$50"},
+    "Dinner": {"time": "19:00", "restaurant": "Musso & Frank Grill", "cost": "$120"},
+    "Accommodation": "Loews Hollywood Hotel ($300/night)"
+  },
+  "Day 2": {
+    "Morning": {"time": "09:00", "activity": "Tour of Universal Studios Hollywood", "cost": "$250"},
+    "Lunch": {"time": "12:00", "restaurant": "Three Broomsticks at Universal", "cost": "$60"},
+    "Afternoon": {"time": "14:00", "activity": "Continue exploring Universal Studios", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "The Ivy", "cost": "$150"},
+    "Accommodation": "Loews Hollywood Hotel ($300/night)"
+  },
+  "Day 3": {
+    "Morning": {"time": "09:00", "activity": "Stroll through Santa Monica Pier and Beach", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "Blue Plate Oysterette", "cost": "$70"},
+    "Afternoon": {"time": "14:00", "activity": "Visit The Getty Center", "cost": "$20"},
+    "Dinner": {"time": "19:00", "restaurant": "Nobu Malibu", "cost": "$200"},
+    "Accommodation": "Loews Hollywood Hotel ($300/night)"
+  },
+  "Total Cost": "$1680"
+}
+
+(Length: 1393 chars)
+
+⚙️  PROCESSED RESPONSE:
+--------------------------------------------------------------------------------
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "Visit Griffith Observatory and hike to the Hollywood Sign", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "The Alcove Cafe & Bakery", "cost": "$50"},
+    "Afternoon": {"time": "14:00", "activity": "Explore the Los Angeles County Museum of Art", "cost": "$50"},
+    "Dinner": {"time": "19:00", "restaurant": "Musso & Frank Grill", "cost": "$120"},
+    "Accommodation": "Loews Hollywood Hotel ($300/night)"
+  },
+  "Day 2": {
+    "Morning": {"time": "09:00", "activity": "Tour of Universal Studios Hollywood", "cost": "$250"},
+    "Lunch": {"time": "12:00", "restaurant": "Three Broomsticks at Universal", "cost": "$60"},
+    "Afternoon": {"time": "14:00", "activity": "Continue exploring Universal Studios", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "The Ivy", "cost": "$150"},
+    "Accommodation": "Loews Hollywood Hotel ($300/night)"
+  },
+  "Day 3": {
+    "Morning": {"time": "09:00", "activity": "Stroll through Santa Monica Pier and Beach", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "Blue Plate Oysterette", "cost": "$70"},
+    "Afternoon": {"time": "14:00", "activity": "Visit The Getty Center", "cost": "$20"},
+    "Dinner": {"time": "19:00", "restaurant": "Nobu Malibu", "cost": "$200"},
+    "Accommodation": "Loews Hollywood Hotel ($300/night)"
+  },
+  "Total Cost": "$1680"
+}
+
+(Length: 1393 chars)
+
+--------------------------------------------------------------------------------
+✅ CRITERIA EVALUATION:
+--------------------------------------------------------------------------------
+
+   1. Itinerary Generated: ✓ PASS
+   2. Correct Number of Days: ✓ PASS
+   3. Within Budget: ✓ PASS
+   4. Correct People Count: ✗ FAIL
+   5. Contains Destination: ✓ PASS
+
+   Total: 4/5 criteria met
+
+--------------------------------------------------------------------------------
+❌ FAILURE REASONS:
+--------------------------------------------------------------------------------
+
+   • Wrong people count (expected 2)
+
+--------------------------------------------------------------------------------
+📊 FINAL VERDICT: ⚠️ PARTIAL
+--------------------------------------------------------------------------------
+
+
+================================================================================
+QUERY #5
+================================================================================
+
+📋 QUERY DETAILS:
+   Destination: Texas
+   Duration: 5 days
+   Budget: $9500
+   People: 4
+
+--------------------------------------------------------------------------------
+🔍 DEBUG INFORMATION:
+--------------------------------------------------------------------------------
+
+📤 LLM PROMPT:
+--------------------------------------------------------------------------------
+You are an expert travel planner. Based on the following examples, create a detailed itinerary for the given query.
+
+EXAMPLES:
+==================================================
+
+Example 1:
+Query: "Could you assist in crafting a travel itinerary for a 5-day, single-person trip departing from Orlando and touring 2 cities in Texas? The travel dates should range from March 10th to March 14th, 2022, and the entire travel budget is $3,100."
+Destination: Texas
+Duration: 5 days
+Plan: [{'org': 'Orlando', 'dest': 'Texas', 'days': 5, 'visiting_city_number': 2, 'date': ['2022-03-10', '2022-03-11', '2022-03-12', '2022-03-13', '2022-03-14'], 'people_number': 1, 'local_constraint': {'hou...
+
+Example 2:
+Query: "Could you help create a 5-day travel itinerary, starting from Baton Rouge moving to 2 cities in Texas between March 1st and March 5th, 2022? This trip is for a solo traveler, who has set a budget of $2,300."
+Destination: Texas
+Duration: 5 days
+Plan: [{'org': 'Baton Rouge', 'dest': 'Texas', 'days': 5, 'visiting_city_number': 2, 'date': ['2022-03-01', '2022-03-02', '2022-03-03', '2022-03-04', '2022-03-05'], 'people_number': 1, 'local_constraint': {...
+
+Example 3:
+Query: "Could you formulate a 5-day travel plan for a group of 5? We'll be starting in Denver and wish to visit 2 cities in Texas from March 8th to March 12th, 2022. We have a budget of $7,100. Our accommodations must allow smoking. In terms of food, we are open to a variety of cuisines, including American, French, Mediterranean, and Italian. It's imperative that our journey does not involve any flights for transportation."
+Destination: Texas
+Duration: 5 days
+Plan: [{'org': 'Denver', 'dest': 'Texas', 'days': 5, 'visiting_city_number': 2, 'date': ['2022-03-08', '2022-03-09', '2022-03-10', '2022-03-11', '2022-03-12'], 'people_number': 5, 'local_constraint': {'hous...
+
+==================================================
+NEW QUERY:
+Destination: Texas
+Duration: 5 days
+Budget: $9500
+People: 4
+
+==================================================
+IMPORTANT: Return ONLY valid JSON in this EXACT format (no markdown, no code blocks):
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "...", "cost": "$X"},
+    "Lunch": {"time": "12:00", "restaurant": "...", "cost": "$X"},
+    "Afternoon": {"time": "14:00", "activity": "...", "cost": "$X"},
+    "Dinner": {"time": "19:00", "restaurant": "...", "cost": "$X"},
+    "Accommodation": "Hotel Name ($X/night)"
+  },
+  "Day 2": {...},
+  ...
+  "Total Cost": "$XXXX"
+}
+
+Provide a detailed day-by-day itinerary with activities, meals, and accommodations.
+
+(Length: 2577 chars)
+
+📥 RAW LLM RESPONSE:
+--------------------------------------------------------------------------------
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "Flight from origin city to Austin, Texas", "cost": "$600"},
+    "Lunch": {"time": "12:00", "restaurant": "Franklin Barbecue", "cost": "$120"},
+    "Afternoon": {"time": "14:00", "activity": "Visit Texas State Capitol", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Uchi Austin", "cost": "$200"},
+    "Accommodation": "The Driskill Hotel ($300/night)"
+  },
+  "Day 2": {
+    "Morning": {"time": "09:00", "activity": "Tour of University of Texas at Austin", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "Torchy's Tacos", "cost": "$80"},
+    "Afternoon": {"time": "14:00", "activity": "Explore South Congress Avenue", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Eddie V's Prime Seafood", "cost": "$250"},
+    "Accommodation": "The Driskill Hotel ($300/night)"
+  },
+  "Day 3": {
+    "Morning": {"time": "09:00", "activity": "Drive to San Antonio", "cost": "$50"},
+    "Lunch": {"time": "12:00", "restaurant": "Mi Tierra Cafe", "cost": "$100"},
+    "Afternoon": {"time": "14:00", "activity": "Visit The Alamo", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Bohanan's Prime Steaks and Seafood", "cost": "$220"},
+    "Accommodation": "Hotel Emma ($400/night)"
+  },
+  "Day 4": {
+    "Morning": {"time": "09:00", "activity": "River Walk Boat Tour", "cost": "$60"},
+    "Lunch": {"time": "12:00", "restaurant": "The Esquire Tavern", "cost": "$90"},
+    "Afternoon": {"time": "14:00", "activity": "Visit San Antonio Museum of Art", "cost": "$40"},
+    "Dinner": {"time": "19:00", "restaurant": "Biga on the Banks", "cost": "$200"},
+    "Accommodation": "Hotel Emma ($400/night)"
+  },
+  "Day 5": {
+    "Morning": {"time": "09:00", "activity": "Drive back to Austin", "cost": "$50"},
+    "Lunch": {"time": "12:00", "restaurant": "Lamberts Downtown Barbecue", "cost": "$100"},
+    "Afternoon": {"time": "14:00", "activity": "Visit Blanton Museum of Art", "cost": "$40"},
+    "Dinner": {"time": "19:00", "restaurant": "Jeffrey's", "cost": "$240"},
+    "Accommodation": "Return to origin city"
+  },
+  "Total Cost": "$9200"
+}
+
+(Length: 2133 chars)
+
+⚙️  PROCESSED RESPONSE:
+--------------------------------------------------------------------------------
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "Flight from origin city to Austin, Texas", "cost": "$600"},
+    "Lunch": {"time": "12:00", "restaurant": "Franklin Barbecue", "cost": "$120"},
+    "Afternoon": {"time": "14:00", "activity": "Visit Texas State Capitol", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Uchi Austin", "cost": "$200"},
+    "Accommodation": "The Driskill Hotel ($300/night)"
+  },
+  "Day 2": {
+    "Morning": {"time": "09:00", "activity": "Tour of University of Texas at Austin", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "Torchy's Tacos", "cost": "$80"},
+    "Afternoon": {"time": "14:00", "activity": "Explore South Congress Avenue", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Eddie V's Prime Seafood", "cost": "$250"},
+    "Accommodation": "The Driskill Hotel ($300/night)"
+  },
+  "Day 3": {
+    "Morning": {"time": "09:00", "activity": "Drive to San Antonio", "cost": "$50"},
+    "Lunch": {"time": "12:00", "restaurant": "Mi Tierra Cafe", "cost": "$100"},
+    "Afternoon": {"time": "14:00", "activity": "Visit The Alamo", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Bohanan's Prime Steaks and Seafood", "cost": "$220"},
+    "Accommodation": "Hotel Emma ($400/night)"
+  },
+  "Day 4": {
+    "Morning": {"time": "09:00", "activity": "River Walk Boat Tour", "cost": "$60"},
+    "Lunch": {"time": "12:00", "restaurant": "The Esquire Tavern", "cost": "$90"},
+    "Afternoon": {"time": "14:00", "activity": "Visit San Antonio Museum of Art", "cost": "$40"},
+    "Dinner": {"time": "19:00", "restaurant": "Biga on the Banks", "cost": "$200"},
+    "Accommodation": "Hotel Emma ($400/night)"
+  },
+  "Day 5": {
+    "Morning": {"time": "09:00", "activity": "Drive back to Austin", "cost": "$50"},
+    "Lunch": {"time": "12:00", "restaurant": "Lamberts Downtown Barbecue", "cost": "$100"},
+    "Afternoon": {"time": "14:00", "activity": "Visit Blanton Museum of Art", "cost": "$40"},
+    "Dinner": {"time": "19:00", "restaurant": "Jeffrey's", "cost": "$240"},
+    "Accommodation": "Return to origin city"
+  },
+  "Total Cost": "$9200"
+}
+
+(Length: 2133 chars)
+
+--------------------------------------------------------------------------------
+✅ CRITERIA EVALUATION:
+--------------------------------------------------------------------------------
+
+   1. Itinerary Generated: ✓ PASS
+   2. Correct Number of Days: ✓ PASS
+   3. Within Budget: ✓ PASS
+   4. Correct People Count: ✗ FAIL
+   5. Contains Destination: ✓ PASS
+
+   Total: 4/5 criteria met
+
+--------------------------------------------------------------------------------
+❌ FAILURE REASONS:
+--------------------------------------------------------------------------------
+
+   • Wrong people count (expected 4)
+
+--------------------------------------------------------------------------------
+📊 FINAL VERDICT: ⚠️ PARTIAL
+--------------------------------------------------------------------------------
+
+
+================================================================================
+QUERY #6
+================================================================================
+
+📋 QUERY DETAILS:
+   Destination: San Francisco
+   Duration: 3 days
+   Budget: $1200
+   People: 1
+
+--------------------------------------------------------------------------------
+🔍 DEBUG INFORMATION:
+--------------------------------------------------------------------------------
+
+📤 LLM PROMPT:
+--------------------------------------------------------------------------------
+You are an expert travel planner. Based on the following examples, create a detailed itinerary for the given query.
+
+==================================================
+NEW QUERY:
+Destination: San Francisco
+Duration: 3 days
+Budget: $1200
+People: 1
+
+==================================================
+IMPORTANT: Return ONLY valid JSON in this EXACT format (no markdown, no code blocks):
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "...", "cost": "$X"},
+    "Lunch": {"time": "12:00", "restaurant": "...", "cost": "$X"},
+    "Afternoon": {"time": "14:00", "activity": "...", "cost": "$X"},
+    "Dinner": {"time": "19:00", "restaurant": "...", "cost": "$X"},
+    "Accommodation": "Hotel Name ($X/night)"
+  },
+  "Day 2": {...},
+  ...
+  "Total Cost": "$XXXX"
+}
+
+Provide a detailed day-by-day itinerary with activities, meals, and accommodations.
+
+(Length: 855 chars)
+
+📥 RAW LLM RESPONSE:
+--------------------------------------------------------------------------------
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "Visit Alcatraz Island (self-guided tour)", "cost": "$45"},
+    "Lunch": {"time": "12:00", "restaurant": "Boudin Bakery & Cafe (famous for clam chowder in sourdough)", "cost": "$25"},
+    "Afternoon": {"time": "14:00", "activity": "Explore Fisherman's Wharf and Pier 39", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Scoma's (seafood restaurant)", "cost": "$60"},
+    "Accommodation": "Hotel Zephyr ($200/night)"
+  },
+  "Day 2": {
+    "Morning": {"time": "09:00", "activity": "Walk the Golden Gate Bridge and visit the Welcome Center", "cost": "$0"},
+    "Lunch": {"time": "12:30", "restaurant": "Greens Restaurant (vegetarian cuisine with a view)", "cost": "$30"},
+    "Afternoon": {"time": "14:00", "activity": "Visit Golden Gate Park and explore the Conservatory of Flowers", "cost": "$12"},
+    "Dinner": {"time": "19:00", "restaurant": "House of Prime Rib (classic San Francisco dining)", "cost": "$70"},
+    "Accommodation": "Hotel Zephyr ($200/night)"
+  },
+  "Day 3": {
+    "Morning": {"time": "09:00", "activity": "Tour the San Francisco Museum of Modern Art (SFMOMA)", "cost": "$25"},
+    "Lunch": {"time": "12:00", "restaurant": "The Stinking Rose (garlic-themed restaurant)", "cost": "$25"},
+    "Afternoon": {"time": "14:00", "activity": "Explore Chinatown and shop for souvenirs", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Tadich Grill (California's oldest restaurant)", "cost": "$50"},
+    "Accommodation": "Hotel Zephyr ($200/night)"
+  },
+  "Total Cost": "$1042"
+}
+
+(Length: 1576 chars)
+
+⚙️  PROCESSED RESPONSE:
+--------------------------------------------------------------------------------
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "Visit Alcatraz Island (self-guided tour)", "cost": "$45"},
+    "Lunch": {"time": "12:00", "restaurant": "Boudin Bakery & Cafe (famous for clam chowder in sourdough)", "cost": "$25"},
+    "Afternoon": {"time": "14:00", "activity": "Explore Fisherman's Wharf and Pier 39", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Scoma's (seafood restaurant)", "cost": "$60"},
+    "Accommodation": "Hotel Zephyr ($200/night)"
+  },
+  "Day 2": {
+    "Morning": {"time": "09:00", "activity": "Walk the Golden Gate Bridge and visit the Welcome Center", "cost": "$0"},
+    "Lunch": {"time": "12:30", "restaurant": "Greens Restaurant (vegetarian cuisine with a view)", "cost": "$30"},
+    "Afternoon": {"time": "14:00", "activity": "Visit Golden Gate Park and explore the Conservatory of Flowers", "cost": "$12"},
+    "Dinner": {"time": "19:00", "restaurant": "House of Prime Rib (classic San Francisco dining)", "cost": "$70"},
+    "Accommodation": "Hotel Zephyr ($200/night)"
+  },
+  "Day 3": {
+    "Morning": {"time": "09:00", "activity": "Tour the San Francisco Museum of Modern Art (SFMOMA)", "cost": "$25"},
+    "Lunch": {"time": "12:00", "restaurant": "The Stinking Rose (garlic-themed restaurant)", "cost": "$25"},
+    "Afternoon": {"time": "14:00", "activity": "Explore Chinatown and shop for souvenirs", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Tadich Grill (California's oldest restaurant)", "cost": "$50"},
+    "Accommodation": "Hotel Zephyr ($200/night)"
+  },
+  "Total Cost": "$1042"
+}
+
+(Length: 1576 chars)
+
+--------------------------------------------------------------------------------
+✅ CRITERIA EVALUATION:
+--------------------------------------------------------------------------------
+
+   1. Itinerary Generated: ✓ PASS
+   2. Correct Number of Days: ✓ PASS
+   3. Within Budget: ✓ PASS
+   4. Correct People Count: ✓ PASS
+   5. Contains Destination: ✓ PASS
+
+   Total: 5/5 criteria met
+
+--------------------------------------------------------------------------------
+📊 FINAL VERDICT: 🎉 COMPLETE
+--------------------------------------------------------------------------------
+
+
+================================================================================
+QUERY #7
+================================================================================
+
+📋 QUERY DETAILS:
+   Destination: Michigan
+   Duration: 5 days
+   Budget: $4600
+   People: 1
+
+--------------------------------------------------------------------------------
+🔍 DEBUG INFORMATION:
+--------------------------------------------------------------------------------
+
+📤 LLM PROMPT:
+--------------------------------------------------------------------------------
+You are an expert travel planner. Based on the following examples, create a detailed itinerary for the given query.
+
+EXAMPLES:
+==================================================
+
+Example 1:
+Query: "We are a group of 5 looking for a 7-day travel itinerary, departing from Sault Ste. Marie towards Michigan. We plan to visit 3 different cities from March 15th to March 21st, 2022. Our budget allows us to spend up to $12,700. We require entire rooms for our stay. Could you help us with this plan?"
+Destination: Michigan
+Duration: 7 days
+Plan: [{'org': 'Sault Ste. Marie', 'dest': 'Michigan', 'days': 7, 'visiting_city_number': 3, 'date': ['2022-03-15', '2022-03-16', '2022-03-17', '2022-03-18', '2022-03-19', '2022-03-20', '2022-03-21'], 'peop...
+
+Example 2:
+Query: "We're organizing a week-long trip for 4 people, starting in Louisville and stopping in three different cities in Michigan. The trip will begin on March 8th and conclude on March 14th, 2022. Our budget is now $19,400, and we require private rooms for accommodations."
+Destination: Michigan
+Duration: 7 days
+Plan: [{'org': 'Louisville', 'dest': 'Michigan', 'days': 7, 'visiting_city_number': 3, 'date': ['2022-03-08', '2022-03-09', '2022-03-10', '2022-03-11', '2022-03-12', '2022-03-13', '2022-03-14'], 'people_num...
+
+==================================================
+NEW QUERY:
+Destination: Michigan
+Duration: 5 days
+Budget: $4600
+People: 1
+
+==================================================
+IMPORTANT: Return ONLY valid JSON in this EXACT format (no markdown, no code blocks):
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "...", "cost": "$X"},
+    "Lunch": {"time": "12:00", "restaurant": "...", "cost": "$X"},
+    "Afternoon": {"time": "14:00", "activity": "...", "cost": "$X"},
+    "Dinner": {"time": "19:00", "restaurant": "...", "cost": "$X"},
+    "Accommodation": "Hotel Name ($X/night)"
+  },
+  "Day 2": {...},
+  ...
+  "Total Cost": "$XXXX"
+}
+
+Provide a detailed day-by-day itinerary with activities, meals, and accommodations.
+
+(Length: 2016 chars)
+
+📥 RAW LLM RESPONSE:
+--------------------------------------------------------------------------------
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "Drive from home to Detroit, Michigan", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "Lafayette Coney Island", "cost": "$15"},
+    "Afternoon": {"time": "14:00", "activity": "Visit Detroit Institute of Arts", "cost": "$14"},
+    "Dinner": {"time": "19:00", "restaurant": "Selden Standard", "cost": "$50"},
+    "Accommodation": "The Siren Hotel ($150/night)"
+  },
+  "Day 2": {
+    "Morning": {"time": "09:00", "activity": "Visit The Henry Ford Museum", "cost": "$25"},
+    "Lunch": {"time": "12:00", "restaurant": "Ford's Garage", "cost": "$20"},
+    "Afternoon": {"time": "14:00", "activity": "Explore Detroit Riverwalk", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Chartreuse Kitchen & Cocktails", "cost": "$55"},
+    "Accommodation": "The Siren Hotel ($150/night)"
+  },
+  "Day 3": {
+    "Morning": {"time": "09:00", "activity": "Drive to Ann Arbor, Michigan", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "Zingerman's Delicatessen", "cost": "$25"},
+    "Afternoon": {"time": "14:00", "activity": "Visit University of Michigan Museum of Art", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "The Earle", "cost": "$60"},
+    "Accommodation": "Graduate Ann Arbor ($170/night)"
+  },
+  "Day 4": {
+    "Morning": {"time": "09:00", "activity": "Drive to Lansing, Michigan", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "Meat BBQ", "cost": "$20"},
+    "Afternoon": {"time": "14:00", "activity": "Tour Michigan State Capitol", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "The Soup Spoon Café", "cost": "$30"},
+    "Accommodation": "Radisson Hotel Lansing ($140/night)"
+  },
+  "Day 5": {
+    "Morning": {"time": "09:00", "activity": "Visit Potter Park Zoo", "cost": "$10"},
+    "Lunch": {"time": "12:00", "restaurant": "Golden Harvest", "cost": "$15"},
+    "Afternoon": {"time": "14:00", "activity": "Drive back home", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Home-cooked meal", "cost": "$0"},
+    "Accommodation": "Home"
+  },
+  "Total Cost": "$1369"
+}
+
+(Length: 2118 chars)
+
+⚙️  PROCESSED RESPONSE:
+--------------------------------------------------------------------------------
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "Drive from home to Detroit, Michigan", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "Lafayette Coney Island", "cost": "$15"},
+    "Afternoon": {"time": "14:00", "activity": "Visit Detroit Institute of Arts", "cost": "$14"},
+    "Dinner": {"time": "19:00", "restaurant": "Selden Standard", "cost": "$50"},
+    "Accommodation": "The Siren Hotel ($150/night)"
+  },
+  "Day 2": {
+    "Morning": {"time": "09:00", "activity": "Visit The Henry Ford Museum", "cost": "$25"},
+    "Lunch": {"time": "12:00", "restaurant": "Ford's Garage", "cost": "$20"},
+    "Afternoon": {"time": "14:00", "activity": "Explore Detroit Riverwalk", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Chartreuse Kitchen & Cocktails", "cost": "$55"},
+    "Accommodation": "The Siren Hotel ($150/night)"
+  },
+  "Day 3": {
+    "Morning": {"time": "09:00", "activity": "Drive to Ann Arbor, Michigan", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "Zingerman's Delicatessen", "cost": "$25"},
+    "Afternoon": {"time": "14:00", "activity": "Visit University of Michigan Museum of Art", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "The Earle", "cost": "$60"},
+    "Accommodation": "Graduate Ann Arbor ($170/night)"
+  },
+  "Day 4": {
+    "Morning": {"time": "09:00", "activity": "Drive to Lansing, Michigan", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "Meat BBQ", "cost": "$20"},
+    "Afternoon": {"time": "14:00", "activity": "Tour Michigan State Capitol", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "The Soup Spoon Café", "cost": "$30"},
+    "Accommodation": "Radisson Hotel Lansing ($140/night)"
+  },
+  "Day 5": {
+    "Morning": {"time": "09:00", "activity": "Visit Potter Park Zoo", "cost": "$10"},
+    "Lunch": {"time": "12:00", "restaurant": "Golden Harvest", "cost": "$15"},
+    "Afternoon": {"time": "14:00", "activity": "Drive back home", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Home-cooked meal", "cost": "$0"},
+    "Accommodation": "Home"
+  },
+  "Total Cost": "$1369"
+}
+
+(Length: 2118 chars)
+
+--------------------------------------------------------------------------------
+✅ CRITERIA EVALUATION:
+--------------------------------------------------------------------------------
+
+   1. Itinerary Generated: ✓ PASS
+   2. Correct Number of Days: ✓ PASS
+   3. Within Budget: ✓ PASS
+   4. Correct People Count: ✓ PASS
+   5. Contains Destination: ✓ PASS
+
+   Total: 5/5 criteria met
+
+--------------------------------------------------------------------------------
+📊 FINAL VERDICT: 🎉 COMPLETE
+--------------------------------------------------------------------------------
+
+
+================================================================================
+QUERY #8
+================================================================================
+
+📋 QUERY DETAILS:
+   Destination: Nashville
+   Duration: 3 days
+   Budget: $2900
+   People: 2
+
+--------------------------------------------------------------------------------
+🔍 DEBUG INFORMATION:
+--------------------------------------------------------------------------------
+
+📤 LLM PROMPT:
+--------------------------------------------------------------------------------
+You are an expert travel planner. Based on the following examples, create a detailed itinerary for the given query.
+
+==================================================
+NEW QUERY:
+Destination: Nashville
+Duration: 3 days
+Budget: $2900
+People: 2
+
+==================================================
+IMPORTANT: Return ONLY valid JSON in this EXACT format (no markdown, no code blocks):
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "...", "cost": "$X"},
+    "Lunch": {"time": "12:00", "restaurant": "...", "cost": "$X"},
+    "Afternoon": {"time": "14:00", "activity": "...", "cost": "$X"},
+    "Dinner": {"time": "19:00", "restaurant": "...", "cost": "$X"},
+    "Accommodation": "Hotel Name ($X/night)"
+  },
+  "Day 2": {...},
+  ...
+  "Total Cost": "$XXXX"
+}
+
+Provide a detailed day-by-day itinerary with activities, meals, and accommodations.
+
+(Length: 851 chars)
+
+📥 RAW LLM RESPONSE:
+--------------------------------------------------------------------------------
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "Visit the Country Music Hall of Fame and Museum", "cost": "$50"},
+    "Lunch": {"time": "12:00", "restaurant": "Puckett's Grocery & Restaurant", "cost": "$45"},
+    "Afternoon": {"time": "14:00", "activity": "Explore the Ryman Auditorium", "cost": "$40"},
+    "Dinner": {"time": "19:00", "restaurant": "The Southern Steak & Oyster", "cost": "$100"},
+    "Accommodation": "The Hermitage Hotel ($450/night)"
+  },
+  "Day 2": {
+    "Morning": {"time": "09:00", "activity": "Tour the Johnny Cash Museum", "cost": "$50"},
+    "Lunch": {"time": "12:00", "restaurant": "The Stillery", "cost": "$50"},
+    "Afternoon": {"time": "14:00", "activity": "Stroll through Centennial Park and visit The Parthenon", "cost": "$10"},
+    "Dinner": {"time": "19:00", "restaurant": "Etch Restaurant", "cost": "$110"},
+    "Accommodation": "The Hermitage Hotel ($450/night)"
+  },
+  "Day 3": {
+    "Morning": {"time": "09:00", "activity": "Walk around Broadway and shop for souvenirs", "cost": "$60"},
+    "Lunch": {"time": "12:00", "restaurant": "Hattie B's Hot Chicken", "cost": "$40"},
+    "Afternoon": {"time": "14:00", "activity": "Visit the Belle Meade Plantation", "cost": "$48"},
+    "Dinner": {"time": "19:00", "restaurant": "Kayne Prime Steakhouse", "cost": "$130"},
+    "Accommodation": "The Hermitage Hotel ($450/night)"
+  },
+  "Total Cost": "$2893"
+}
+
+(Length: 1400 chars)
+
+⚙️  PROCESSED RESPONSE:
+--------------------------------------------------------------------------------
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "Visit the Country Music Hall of Fame and Museum", "cost": "$50"},
+    "Lunch": {"time": "12:00", "restaurant": "Puckett's Grocery & Restaurant", "cost": "$45"},
+    "Afternoon": {"time": "14:00", "activity": "Explore the Ryman Auditorium", "cost": "$40"},
+    "Dinner": {"time": "19:00", "restaurant": "The Southern Steak & Oyster", "cost": "$100"},
+    "Accommodation": "The Hermitage Hotel ($450/night)"
+  },
+  "Day 2": {
+    "Morning": {"time": "09:00", "activity": "Tour the Johnny Cash Museum", "cost": "$50"},
+    "Lunch": {"time": "12:00", "restaurant": "The Stillery", "cost": "$50"},
+    "Afternoon": {"time": "14:00", "activity": "Stroll through Centennial Park and visit The Parthenon", "cost": "$10"},
+    "Dinner": {"time": "19:00", "restaurant": "Etch Restaurant", "cost": "$110"},
+    "Accommodation": "The Hermitage Hotel ($450/night)"
+  },
+  "Day 3": {
+    "Morning": {"time": "09:00", "activity": "Walk around Broadway and shop for souvenirs", "cost": "$60"},
+    "Lunch": {"time": "12:00", "restaurant": "Hattie B's Hot Chicken", "cost": "$40"},
+    "Afternoon": {"time": "14:00", "activity": "Visit the Belle Meade Plantation", "cost": "$48"},
+    "Dinner": {"time": "19:00", "restaurant": "Kayne Prime Steakhouse", "cost": "$130"},
+    "Accommodation": "The Hermitage Hotel ($450/night)"
+  },
+  "Total Cost": "$2893"
+}
+
+(Length: 1400 chars)
+
+--------------------------------------------------------------------------------
+✅ CRITERIA EVALUATION:
+--------------------------------------------------------------------------------
+
+   1. Itinerary Generated: ✓ PASS
+   2. Correct Number of Days: ✓ PASS
+   3. Within Budget: ✓ PASS
+   4. Correct People Count: ✗ FAIL
+   5. Contains Destination: ✗ FAIL
+
+   Total: 3/5 criteria met
+
+--------------------------------------------------------------------------------
+❌ FAILURE REASONS:
+--------------------------------------------------------------------------------
+
+   • Wrong people count (expected 2)
+   • Wrong destination (expected Panama City)
+
+--------------------------------------------------------------------------------
+📊 FINAL VERDICT: ⚠️ PARTIAL
+--------------------------------------------------------------------------------
+
+
+================================================================================
+QUERY #9
+================================================================================
+
+📋 QUERY DETAILS:
+   Destination: Colorado
+   Duration: 7 days
+   Budget: $16300
+   People: 7
+
+--------------------------------------------------------------------------------
+🔍 DEBUG INFORMATION:
+--------------------------------------------------------------------------------
+
+📤 LLM PROMPT:
+--------------------------------------------------------------------------------
+You are an expert travel planner. Based on the following examples, create a detailed itinerary for the given query.
+
+EXAMPLES:
+==================================================
+
+Example 1:
+Query: "Can you help me plan a one-week solo trip from Oklahoma City to Colorado, during which I'll be visiting 3 different cities? The trip will be from March 1st to March 7th, 2022, and I have a budget of $3,000."
+Destination: Colorado
+Duration: 7 days
+Plan: [{'org': 'Oklahoma City', 'dest': 'Colorado', 'days': 7, 'visiting_city_number': 3, 'date': ['2022-03-01', '2022-03-02', '2022-03-03', '2022-03-04', '2022-03-05', '2022-03-06', '2022-03-07'], 'people_...
+
+Example 2:
+Query: "Can you help with generating a 7-day travel plan for a party of 5? We're setting off from Indianapolis and planning to explore 3 cities in Colorado from March 11th to March 17th, 2022. We have a budget of $15,100 for this trip. We'll be bringing our pets, so pet-friendly accommodations are a must. We're also hoping to find places that offer Mexican, Italian, Mediterranean, and Indian cuisines. Entire rooms for accommodations would be ideal."
+Destination: Colorado
+Duration: 7 days
+Plan: [{'org': 'Indianapolis', 'dest': 'Colorado', 'days': 7, 'visiting_city_number': 3, 'date': ['2022-03-11', '2022-03-12', '2022-03-13', '2022-03-14', '2022-03-15', '2022-03-16', '2022-03-17'], 'people_n...
+
+==================================================
+NEW QUERY:
+Destination: Colorado
+Duration: 7 days
+Budget: $16300
+People: 7
+
+==================================================
+IMPORTANT: Return ONLY valid JSON in this EXACT format (no markdown, no code blocks):
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "...", "cost": "$X"},
+    "Lunch": {"time": "12:00", "restaurant": "...", "cost": "$X"},
+    "Afternoon": {"time": "14:00", "activity": "...", "cost": "$X"},
+    "Dinner": {"time": "19:00", "restaurant": "...", "cost": "$X"},
+    "Accommodation": "Hotel Name ($X/night)"
+  },
+  "Day 2": {...},
+  ...
+  "Total Cost": "$XXXX"
+}
+
+Provide a detailed day-by-day itinerary with activities, meals, and accommodations.
+
+(Length: 2105 chars)
+
+📥 RAW LLM RESPONSE:
+--------------------------------------------------------------------------------
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "Arrive in Denver, pick up rental vehicles", "cost": "$100"},
+    "Lunch": {"time": "12:00", "restaurant": "Rioja - Mediterranean cuisine", "cost": "$210"},
+    "Afternoon": {"time": "14:00", "activity": "Explore Denver Botanic Gardens", "cost": "$98"},
+    "Dinner": {"time": "19:00", "restaurant": "La Loma - Mexican cuisine", "cost": "$245"},
+    "Accommodation": "The Crawford Hotel ($700/night)"
+  },
+  "Day 2": {
+    "Morning": {"time": "09:00", "activity": "Drive to Boulder, visit Pearl Street Mall", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "The Kitchen - American cuisine", "cost": "$196"},
+    "Afternoon": {"time": "14:00", "activity": "Hiking at Chautauqua Park", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Frasca Food and Wine - Italian cuisine", "cost": "$280"},
+    "Accommodation": "St Julien Hotel & Spa ($800/night)"
+  },
+  "Day 3": {
+    "Morning": {"time": "09:00", "activity": "Visit Boulder Museum of Contemporary Art", "cost": "$70"},
+    "Lunch": {"time": "12:00", "restaurant": "T/ACO - Mexican cuisine", "cost": "$161"},
+    "Afternoon": {"time": "14:00", "activity": "Drive to Estes Park, visit Estes Park Aerial Tramway", "cost": "$112"},
+    "Dinner": {"time": "19:00", "restaurant": "The Rock Inn Mountain Tavern", "cost": "$224"},
+    "Accommodation": "The Stanley Hotel ($950/night)"
+  },
+  "Day 4": {
+    "Morning": {"time": "09:00", "activity": "Rocky Mountain National Park tour", "cost": "$150"},
+    "Lunch": {"time": "12:00", "restaurant": "Bird & Jim", "cost": "$189"},
+    "Afternoon": {"time": "14:00", "activity": "Continue exploring Rocky Mountain National Park", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Twin Owls Steakhouse", "cost": "$259"},
+    "Accommodation": "The Stanley Hotel ($950/night)"
+  },
+  "Day 5": {
+    "Morning": {"time": "09:00", "activity": "Drive to Colorado Springs, visit Garden of the Gods", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "Uchenna - Ethiopian cuisine", "cost": "$175"},
+    "Afternoon": {"time": "14:00", "activity": "Pikes Peak Cog Railway", "cost": "$245"},
+    "Dinner": {"time": "19:00", "restaurant": "Edelweiss German Restaurant", "cost": "$210"},
+    "Accommodation": "The Broadmoor ($1,100/night)"
+  },
+  "Day 6": {
+    "Morning": {"time": "09:00", "activity": "Cheyenne Mountain Zoo visit", "cost": "$126"},
+    "Lunch": {"time": "12:00", "restaurant": "Rudy's Little Hideaway - Mexican cuisine", "cost": "$154"},
+    "Afternoon": {"time": "14:00", "activity": "Visit Manitou Springs", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "The Margarita at Pine Creek", "cost": "$231"},
+    "Accommodation": "The Broadmoor ($1,100/night)"
+  },
+  "Day 7": {
+    "Morning": {"time": "09:00", "activity": "Drive back to Denver, visit Red Rocks Park and Amphitheatre", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "Root Down - American cuisine", "cost": "$196"},
+    "Afternoon": {"time": "14:00", "activity": "Shopping at Cherry Creek Shopping Center", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Snooze an A.M. Eatery - Brunch for Dinner", "cost": "$175"},
+    "Accommodation": "The Crawford Hotel ($700/night)"
+  },
+  "Total Cost": "$15,980"
+}
+
+(Length: 3310 chars)
+
+⚙️  PROCESSED RESPONSE:
+--------------------------------------------------------------------------------
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "Arrive in Denver, pick up rental vehicles", "cost": "$100"},
+    "Lunch": {"time": "12:00", "restaurant": "Rioja - Mediterranean cuisine", "cost": "$210"},
+    "Afternoon": {"time": "14:00", "activity": "Explore Denver Botanic Gardens", "cost": "$98"},
+    "Dinner": {"time": "19:00", "restaurant": "La Loma - Mexican cuisine", "cost": "$245"},
+    "Accommodation": "The Crawford Hotel ($700/night)"
+  },
+  "Day 2": {
+    "Morning": {"time": "09:00", "activity": "Drive to Boulder, visit Pearl Street Mall", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "The Kitchen - American cuisine", "cost": "$196"},
+    "Afternoon": {"time": "14:00", "activity": "Hiking at Chautauqua Park", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Frasca Food and Wine - Italian cuisine", "cost": "$280"},
+    "Accommodation": "St Julien Hotel & Spa ($800/night)"
+  },
+  "Day 3": {
+    "Morning": {"time": "09:00", "activity": "Visit Boulder Museum of Contemporary Art", "cost": "$70"},
+    "Lunch": {"time": "12:00", "restaurant": "T/ACO - Mexican cuisine", "cost": "$161"},
+    "Afternoon": {"time": "14:00", "activity": "Drive to Estes Park, visit Estes Park Aerial Tramway", "cost": "$112"},
+    "Dinner": {"time": "19:00", "restaurant": "The Rock Inn Mountain Tavern", "cost": "$224"},
+    "Accommodation": "The Stanley Hotel ($950/night)"
+  },
+  "Day 4": {
+    "Morning": {"time": "09:00", "activity": "Rocky Mountain National Park tour", "cost": "$150"},
+    "Lunch": {"time": "12:00", "restaurant": "Bird & Jim", "cost": "$189"},
+    "Afternoon": {"time": "14:00", "activity": "Continue exploring Rocky Mountain National Park", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Twin Owls Steakhouse", "cost": "$259"},
+    "Accommodation": "The Stanley Hotel ($950/night)"
+  },
+  "Day 5": {
+    "Morning": {"time": "09:00", "activity": "Drive to Colorado Springs, visit Garden of the Gods", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "Uchenna - Ethiopian cuisine", "cost": "$175"},
+    "Afternoon": {"time": "14:00", "activity": "Pikes Peak Cog Railway", "cost": "$245"},
+    "Dinner": {"time": "19:00", "restaurant": "Edelweiss German Restaurant", "cost": "$210"},
+    "Accommodation": "The Broadmoor ($1,100/night)"
+  },
+  "Day 6": {
+    "Morning": {"time": "09:00", "activity": "Cheyenne Mountain Zoo visit", "cost": "$126"},
+    "Lunch": {"time": "12:00", "restaurant": "Rudy's Little Hideaway - Mexican cuisine", "cost": "$154"},
+    "Afternoon": {"time": "14:00", "activity": "Visit Manitou Springs", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "The Margarita at Pine Creek", "cost": "$231"},
+    "Accommodation": "The Broadmoor ($1,100/night)"
+  },
+  "Day 7": {
+    "Morning": {"time": "09:00", "activity": "Drive back to Denver, visit Red Rocks Park and Amphitheatre", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "Root Down - American cuisine", "cost": "$196"},
+    "Afternoon": {"time": "14:00", "activity": "Shopping at Cherry Creek Shopping Center", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Snooze an A.M. Eatery - Brunch for Dinner", "cost": "$175"},
+    "Accommodation": "The Crawford Hotel ($700/night)"
+  },
+  "Total Cost": "$15,980"
+}
+
+(Length: 3310 chars)
+
+--------------------------------------------------------------------------------
+✅ CRITERIA EVALUATION:
+--------------------------------------------------------------------------------
+
+   1. Itinerary Generated: ✓ PASS
+   2. Correct Number of Days: ✓ PASS
+   3. Within Budget: ✓ PASS
+   4. Correct People Count: ✗ FAIL
+   5. Contains Destination: ✓ PASS
+
+   Total: 4/5 criteria met
+
+--------------------------------------------------------------------------------
+❌ FAILURE REASONS:
+--------------------------------------------------------------------------------
+
+   • Wrong people count (expected 7)
+
+--------------------------------------------------------------------------------
+📊 FINAL VERDICT: ⚠️ PARTIAL
+--------------------------------------------------------------------------------
+
+
+================================================================================
+QUERY #10
+================================================================================
+
+📋 QUERY DETAILS:
+   Destination: Illinois
+   Duration: 7 days
+   Budget: $8400
+   People: 3
+
+--------------------------------------------------------------------------------
+🔍 DEBUG INFORMATION:
+--------------------------------------------------------------------------------
+
+📤 LLM PROMPT:
+--------------------------------------------------------------------------------
+You are an expert travel planner. Based on the following examples, create a detailed itinerary for the given query.
+
+==================================================
+NEW QUERY:
+Destination: Illinois
+Duration: 7 days
+Budget: $8400
+People: 3
+
+==================================================
+IMPORTANT: Return ONLY valid JSON in this EXACT format (no markdown, no code blocks):
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "...", "cost": "$X"},
+    "Lunch": {"time": "12:00", "restaurant": "...", "cost": "$X"},
+    "Afternoon": {"time": "14:00", "activity": "...", "cost": "$X"},
+    "Dinner": {"time": "19:00", "restaurant": "...", "cost": "$X"},
+    "Accommodation": "Hotel Name ($X/night)"
+  },
+  "Day 2": {...},
+  ...
+  "Total Cost": "$XXXX"
+}
+
+Provide a detailed day-by-day itinerary with activities, meals, and accommodations.
+
+(Length: 850 chars)
+
+📥 RAW LLM RESPONSE:
+--------------------------------------------------------------------------------
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "Visit Millennium Park and see the Cloud Gate", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "The Gage, Chicago", "cost": "$90"},
+    "Afternoon": {"time": "14:00", "activity": "Explore Art Institute of Chicago", "cost": "$75"},
+    "Dinner": {"time": "19:00", "restaurant": "Giordano's Pizza, Chicago", "cost": "$60"},
+    "Accommodation": "The Palmer House Hilton ($300/night)"
+  },
+  "Day 2": {
+    "Morning": {"time": "09:00", "activity": "Architecture River Cruise", "cost": "$150"},
+    "Lunch": {"time": "12:00", "restaurant": "Lou Malnati's Pizzeria, Chicago", "cost": "$75"},
+    "Afternoon": {"time": "14:00", "activity": "Visit The Field Museum", "cost": "$72"},
+    "Dinner": {"time": "19:00", "restaurant": "RPM Steak, Chicago", "cost": "$180"},
+    "Accommodation": "The Palmer House Hilton ($300/night)"
+  },
+  "Day 3": {
+    "Morning": {"time": "09:00", "activity": "Visit Shedd Aquarium", "cost": "$105"},
+    "Lunch": {"time": "12:00", "restaurant": "The Purple Pig, Chicago", "cost": "$90"},
+    "Afternoon": {"time": "14:00", "activity": "Explore Navy Pier", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Girl & The Goat, Chicago", "cost": "$150"},
+    "Accommodation": "The Palmer House Hilton ($300/night)"
+  },
+  "Day 4": {
+    "Morning": {"time": "09:00", "activity": "Drive to Springfield, IL", "cost": "$60"},
+    "Lunch": {"time": "12:00", "restaurant": "Obed & Isaac's Microbrewery, Springfield", "cost": "$60"},
+    "Afternoon": {"time": "14:00", "activity": "Visit Abraham Lincoln Presidential Library and Museum", "cost": "$45"},
+    "Dinner": {"time": "19:00", "restaurant": "Maldaner's Restaurant, Springfield", "cost": "$90"},
+    "Accommodation": "President Abraham Lincoln Springfield, a DoubleTree by Hilton ($170/night)"
+  },
+  "Day 5": {
+    "Morning": {"time": "09:00", "activity": "Visit Lincoln Home National Historic Site", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "D'Arcy's Pint, Springfield", "cost": "$60"},
+    "Afternoon": {"time": "14:00", "activity": "Drive to Starved Rock State Park", "cost": "$60"},
+    "Dinner": {"time": "19:00", "restaurant": "Starved Rock Lodge Restaurant", "cost": "$75"},
+    "Accommodation": "Starved Rock Lodge & Conference Center ($220/night)"
+  },
+  "Day 6": {
+    "Morning": {"time": "09:00", "activity": "Hiking in Starved Rock State Park", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "Nonie's Bakery & Cafe, Utica", "cost": "$45"},
+    "Afternoon": {"time": "14:00", "activity": "Visit Matthiessen State Park", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "The Lone Buffalo, Ottawa", "cost": "$90"},
+    "Accommodation": "Starved Rock Lodge & Conference Center ($220/night)"
+  },
+  "Day 7": {
+    "Morning": {"time": "09:00", "activity": "Drive back to Chicago", "cost": "$60"},
+    "Lunch": {"time": "12:00", "restaurant": "Portillo's Hot Dogs, Chicago", "cost": "$45"},
+    "Afternoon": {"time": "14:00", "activity": "Shopping on Magnificent Mile", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Alinea, Chicago", "cost": "$750"},
+    "Accommodation": "The Palmer House Hilton ($300/night)"
+  },
+  "Total Cost": "$8377"
+}
+
+(Length: 3263 chars)
+
+⚙️  PROCESSED RESPONSE:
+--------------------------------------------------------------------------------
+{
+  "Day 1": {
+    "Morning": {"time": "09:00", "activity": "Visit Millennium Park and see the Cloud Gate", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "The Gage, Chicago", "cost": "$90"},
+    "Afternoon": {"time": "14:00", "activity": "Explore Art Institute of Chicago", "cost": "$75"},
+    "Dinner": {"time": "19:00", "restaurant": "Giordano's Pizza, Chicago", "cost": "$60"},
+    "Accommodation": "The Palmer House Hilton ($300/night)"
+  },
+  "Day 2": {
+    "Morning": {"time": "09:00", "activity": "Architecture River Cruise", "cost": "$150"},
+    "Lunch": {"time": "12:00", "restaurant": "Lou Malnati's Pizzeria, Chicago", "cost": "$75"},
+    "Afternoon": {"time": "14:00", "activity": "Visit The Field Museum", "cost": "$72"},
+    "Dinner": {"time": "19:00", "restaurant": "RPM Steak, Chicago", "cost": "$180"},
+    "Accommodation": "The Palmer House Hilton ($300/night)"
+  },
+  "Day 3": {
+    "Morning": {"time": "09:00", "activity": "Visit Shedd Aquarium", "cost": "$105"},
+    "Lunch": {"time": "12:00", "restaurant": "The Purple Pig, Chicago", "cost": "$90"},
+    "Afternoon": {"time": "14:00", "activity": "Explore Navy Pier", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Girl & The Goat, Chicago", "cost": "$150"},
+    "Accommodation": "The Palmer House Hilton ($300/night)"
+  },
+  "Day 4": {
+    "Morning": {"time": "09:00", "activity": "Drive to Springfield, IL", "cost": "$60"},
+    "Lunch": {"time": "12:00", "restaurant": "Obed & Isaac's Microbrewery, Springfield", "cost": "$60"},
+    "Afternoon": {"time": "14:00", "activity": "Visit Abraham Lincoln Presidential Library and Museum", "cost": "$45"},
+    "Dinner": {"time": "19:00", "restaurant": "Maldaner's Restaurant, Springfield", "cost": "$90"},
+    "Accommodation": "President Abraham Lincoln Springfield, a DoubleTree by Hilton ($170/night)"
+  },
+  "Day 5": {
+    "Morning": {"time": "09:00", "activity": "Visit Lincoln Home National Historic Site", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "D'Arcy's Pint, Springfield", "cost": "$60"},
+    "Afternoon": {"time": "14:00", "activity": "Drive to Starved Rock State Park", "cost": "$60"},
+    "Dinner": {"time": "19:00", "restaurant": "Starved Rock Lodge Restaurant", "cost": "$75"},
+    "Accommodation": "Starved Rock Lodge & Conference Center ($220/night)"
+  },
+  "Day 6": {
+    "Morning": {"time": "09:00", "activity": "Hiking in Starved Rock State Park", "cost": "$0"},
+    "Lunch": {"time": "12:00", "restaurant": "Nonie's Bakery & Cafe, Utica", "cost": "$45"},
+    "Afternoon": {"time": "14:00", "activity": "Visit Matthiessen State Park", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "The Lone Buffalo, Ottawa", "cost": "$90"},
+    "Accommodation": "Starved Rock Lodge & Conference Center ($220/night)"
+  },
+  "Day 7": {
+    "Morning": {"time": "09:00", "activity": "Drive back to Chicago", "cost": "$60"},
+    "Lunch": {"time": "12:00", "restaurant": "Portillo's Hot Dogs, Chicago", "cost": "$45"},
+    "Afternoon": {"time": "14:00", "activity": "Shopping on Magnificent Mile", "cost": "$0"},
+    "Dinner": {"time": "19:00", "restaurant": "Alinea, Chicago", "cost": "$750"},
+    "Accommodation": "The Palmer House Hilton ($300/night)"
+  },
+  "Total Cost": "$8377"
+}
+
+(Length: 3263 chars)
+
+--------------------------------------------------------------------------------
+✅ CRITERIA EVALUATION:
+--------------------------------------------------------------------------------
+
+   1. Itinerary Generated: ✓ PASS
+   2. Correct Number of Days: ✓ PASS
+   3. Within Budget: ✓ PASS
+   4. Correct People Count: ✗ FAIL
+   5. Contains Destination: ✗ FAIL
+
+   Total: 3/5 criteria met
+
+--------------------------------------------------------------------------------
+❌ FAILURE REASONS:
+--------------------------------------------------------------------------------
+
+   • Wrong people count (expected 3)
+   • Wrong destination (expected Peoria)
+
+--------------------------------------------------------------------------------
+📊 FINAL VERDICT: ⚠️ PARTIAL
+--------------------------------------------------------------------------------
+

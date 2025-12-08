@@ -1,0 +1,513 @@
+PLANNER EVALUATION - DETAILED COMPARISON
+======================================================================
+
+Query #1
+----------------------------------------------------------------------
+Destination: Orlando
+Duration: 3 days
+Budget: $1800
+People: 1
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✓
+
+Result: COMPLETE (5/5)
+======================================================================
+
+Query #2
+----------------------------------------------------------------------
+Destination: California
+Duration: 7 days
+Budget: $5800
+People: 1
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✓
+
+Result: COMPLETE (5/5)
+======================================================================
+
+Query #3
+----------------------------------------------------------------------
+Destination: Texas
+Duration: 5 days
+Budget: $2900
+People: 2
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✓
+
+Result: COMPLETE (5/5)
+======================================================================
+
+Query #4
+----------------------------------------------------------------------
+Destination: Los Angeles
+Duration: 3 days
+Budget: $1700
+People: 2
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✓
+
+Result: COMPLETE (5/5)
+======================================================================
+
+Query #5
+----------------------------------------------------------------------
+Destination: Texas
+Duration: 5 days
+Budget: $9500
+People: 4
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✓
+
+Result: COMPLETE (5/5)
+======================================================================
+
+Query #6
+----------------------------------------------------------------------
+Destination: San Francisco
+Duration: 3 days
+Budget: $1200
+People: 1
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✗
+
+Result: PARTIAL (4/5)
+======================================================================
+
+Query #7
+----------------------------------------------------------------------
+Destination: Michigan
+Duration: 5 days
+Budget: $4600
+People: 1
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✓
+
+Result: COMPLETE (5/5)
+======================================================================
+
+Query #8
+----------------------------------------------------------------------
+Destination: Nashville
+Duration: 3 days
+Budget: $2900
+People: 2
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✓
+
+Result: COMPLETE (5/5)
+======================================================================
+
+Query #9
+----------------------------------------------------------------------
+Destination: Colorado
+Duration: 7 days
+Budget: $16300
+People: 7
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✓
+
+Result: COMPLETE (5/5)
+======================================================================
+
+Query #10
+----------------------------------------------------------------------
+Destination: Illinois
+Duration: 7 days
+Budget: $8400
+People: 3
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✓
+
+Result: COMPLETE (5/5)
+======================================================================
+
+Query #11
+----------------------------------------------------------------------
+Destination: Texas
+Duration: 5 days
+Budget: $6000
+People: 2
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✓
+
+Result: COMPLETE (5/5)
+======================================================================
+
+Query #12
+----------------------------------------------------------------------
+Destination: Pennsylvania
+Duration: 5 days
+Budget: $2700
+People: 2
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✗
+
+Result: PARTIAL (4/5)
+======================================================================
+
+Query #13
+----------------------------------------------------------------------
+Destination: Belleville
+Duration: 3 days
+Budget: $6600
+People: 8
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✓
+
+Result: COMPLETE (5/5)
+======================================================================
+
+Query #14
+----------------------------------------------------------------------
+Destination: Florida
+Duration: 5 days
+Budget: $13900
+People: 6
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✓
+
+Result: COMPLETE (5/5)
+======================================================================
+
+Query #15
+----------------------------------------------------------------------
+Destination: Pennsylvania
+Duration: 7 days
+Budget: $5100
+People: 1
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✗
+
+Result: PARTIAL (4/5)
+======================================================================
+
+Query #16
+----------------------------------------------------------------------
+Destination: Washington
+Duration: 3 days
+Budget: $1500
+People: 1
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✗
+
+Result: PARTIAL (4/5)
+======================================================================
+
+Query #17
+----------------------------------------------------------------------
+Destination: Colorado
+Duration: 7 days
+Budget: $5900
+People: 1
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✓
+
+Result: COMPLETE (5/5)
+======================================================================
+
+Query #18
+----------------------------------------------------------------------
+Destination: Albany
+Duration: 3 days
+Budget: $2300
+People: 2
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✓
+
+Result: COMPLETE (5/5)
+======================================================================
+
+Query #19
+----------------------------------------------------------------------
+Destination: Texas
+Duration: 5 days
+Budget: $3900
+People: 3
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✓
+
+Result: COMPLETE (5/5)
+======================================================================
+
+Query #20
+----------------------------------------------------------------------
+Destination: California
+Duration: 7 days
+Budget: $2500
+People: 1
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✗
+
+Result: PARTIAL (4/5)
+======================================================================
+
+Query #21
+----------------------------------------------------------------------
+Destination: Florida
+Duration: 5 days
+Budget: $15900
+People: 4
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✓
+
+Result: COMPLETE (5/5)
+======================================================================
+
+Query #22
+----------------------------------------------------------------------
+Destination: Minneapolis
+Duration: 3 days
+Budget: $2300
+People: 3
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✓
+
+Result: COMPLETE (5/5)
+======================================================================
+
+Query #23
+----------------------------------------------------------------------
+Destination: Wisconsin
+Duration: 5 days
+Budget: $2500
+People: 2
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✓
+
+Result: COMPLETE (5/5)
+======================================================================
+
+Query #24
+----------------------------------------------------------------------
+Destination: Colorado
+Duration: 5 days
+Budget: $4300
+People: 1
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✓
+
+Result: COMPLETE (5/5)
+======================================================================
+
+Query #25
+----------------------------------------------------------------------
+Destination: St. Louis
+Duration: 3 days
+Budget: $1000
+People: 1
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✗
+  People:       ✓
+  Destination:  ✓
+
+Result: PARTIAL (4/5)
+======================================================================
+
+Query #26
+----------------------------------------------------------------------
+Destination: Louisiana
+Duration: 7 days
+Budget: $4400
+People: 2
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✓
+
+Result: COMPLETE (5/5)
+======================================================================
+
+Query #27
+----------------------------------------------------------------------
+Destination: Reno
+Duration: 3 days
+Budget: $11300
+People: 4
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✗
+
+Result: PARTIAL (4/5)
+======================================================================
+
+Query #28
+----------------------------------------------------------------------
+Destination: San Francisco
+Duration: 3 days
+Budget: $900
+People: 1
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✗
+
+Result: PARTIAL (4/5)
+======================================================================
+
+Query #29
+----------------------------------------------------------------------
+Destination: Massachusetts
+Duration: 5 days
+Budget: $3800
+People: 3
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✗
+
+Result: PARTIAL (4/5)
+======================================================================
+
+Query #30
+----------------------------------------------------------------------
+Destination: Colorado
+Duration: 7 days
+Budget: $6500
+People: 2
+
+Criteria Met:
+  Generated:    ✓
+  Days:         ✓
+  Budget:       ✓
+  People:       ✓
+  Destination:  ✓
+
+Result: COMPLETE (5/5)
+======================================================================
+

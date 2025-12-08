@@ -1,0 +1,1272 @@
+{
+  "total": 50,
+  "destination_correct": 49,
+  "duration_correct": 44,
+  "budget_correct": 50,
+  "people_correct": 38,
+  "details": [
+    {
+      "query_id": 20,
+      "query_text": "Could you assist with a 3-day travel itinerary starting from Providence to Orlando, with a visit pla...",
+      "ground_truth": {
+        "destination": "Orlando",
+        "duration": 3,
+        "budget": 1800,
+        "people": 1
+      },
+      "parsed": {
+        "origin": "Providence",
+        "destination": "Orlando",
+        "duration": 3,
+        "budget": 1800,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 43,
+      "query_text": "Could you help me arrange a 7-day solo travel itinerary from Kona to California with a budget of $5,...",
+      "ground_truth": {
+        "destination": "California",
+        "duration": 7,
+        "budget": 5800,
+        "people": 1
+      },
+      "parsed": {
+        "origin": "Kona",
+        "destination": "California",
+        "duration": 7,
+        "budget": 5800,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 154,
+      "query_text": "Could you create a 5-day travel plan for a couple leaving from Baton Rouge and visiting 2 cities in ...",
+      "ground_truth": {
+        "destination": "Texas",
+        "duration": 5,
+        "budget": 2900,
+        "people": 2
+      },
+      "parsed": {
+        "origin": "Baton Rouge",
+        "destination": "Texas",
+        "duration": 5,
+        "budget": 2900,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": false
+      }
+    },
+    {
+      "query_id": 79,
+      "query_text": "Create a travel plan for two people departing from Eugene and heading to Los Angeles. The trip will ...",
+      "ground_truth": {
+        "destination": "Los Angeles",
+        "duration": 3,
+        "budget": 1700,
+        "people": 2
+      },
+      "parsed": {
+        "origin": null,
+        "destination": "Los Angeles",
+        "duration": 3,
+        "budget": 1700,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": false
+      }
+    },
+    {
+      "query_id": 146,
+      "query_text": "Can you help design a 5-day travel plan for a group of 4, starting from Evansville and visiting 2 ci...",
+      "ground_truth": {
+        "destination": "Texas",
+        "duration": 5,
+        "budget": 9500,
+        "people": 4
+      },
+      "parsed": {
+        "origin": null,
+        "destination": "Texas",
+        "duration": 5,
+        "budget": 9500,
+        "people_number": 4,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 16,
+      "query_text": "Could you help me organize a 3-day journey from Spokane to San Francisco from March 3rd to March 5th...",
+      "ground_truth": {
+        "destination": "San Francisco",
+        "duration": 3,
+        "budget": 1200,
+        "people": 1
+      },
+      "parsed": {
+        "origin": "Spokane",
+        "destination": "San Francisco",
+        "duration": 3,
+        "budget": 1200,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 25,
+      "query_text": "Can you create a 5-day travel itinerary for a solo trip starting from Jacksonville and visiting 2 ci...",
+      "ground_truth": {
+        "destination": "Michigan",
+        "duration": 5,
+        "budget": 4600,
+        "people": 1
+      },
+      "parsed": {
+        "origin": "Jacksonville",
+        "destination": "Michigan",
+        "duration": 5,
+        "budget": 4600,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 69,
+      "query_text": "Please create a 3-day travel plan for two people, departing from Panama City and heading to Nashvill...",
+      "ground_truth": {
+        "destination": "Nashville",
+        "duration": 3,
+        "budget": 2900,
+        "people": 2
+      },
+      "parsed": {
+        "origin": "Panama City",
+        "destination": "Nashville",
+        "duration": 3,
+        "budget": 2900,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": false
+      }
+    },
+    {
+      "query_id": 114,
+      "query_text": "Could you design a 7-day travel plan starting March 11th and ending March 17th, 2022, for a group of...",
+      "ground_truth": {
+        "destination": "Colorado",
+        "duration": 7,
+        "budget": 16300,
+        "people": 7
+      },
+      "parsed": {
+        "origin": "Rapid City",
+        "destination": "Colorado",
+        "duration": 7,
+        "budget": 16300,
+        "people_number": 7,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 119,
+      "query_text": "Could you craft a 7-day travel itinerary for a group of three starting in Peoria and planning to vis...",
+      "ground_truth": {
+        "destination": "Illinois",
+        "duration": 7,
+        "budget": 8400,
+        "people": 3
+      },
+      "parsed": {
+        "origin": "Peoria",
+        "destination": "Illinois",
+        "duration": 7,
+        "budget": 8400,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": false
+      }
+    },
+    {
+      "query_id": 94,
+      "query_text": "Could you create a 5-day travel plan for 2 people departing from Richmond to visit 2 cities in Texas...",
+      "ground_truth": {
+        "destination": "Texas",
+        "duration": 5,
+        "budget": 6000,
+        "people": 2
+      },
+      "parsed": {
+        "origin": "Richmond",
+        "destination": "Texas",
+        "duration": 5,
+        "budget": 6000,
+        "people_number": 2,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 160,
+      "query_text": "Could you help me organize a 5-day trip for 2 people starting from Islip to Pennsylvania, covering 2...",
+      "ground_truth": {
+        "destination": "Pennsylvania",
+        "duration": 5,
+        "budget": 2700,
+        "people": 2
+      },
+      "parsed": {
+        "origin": "Islip",
+        "destination": "Pennsylvania",
+        "duration": 5,
+        "budget": 2700,
+        "people_number": 2,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 70,
+      "query_text": "Could you create a 3-day travel itinerary for a group of 8, departing from Valparaiso and moving to ...",
+      "ground_truth": {
+        "destination": "Belleville",
+        "duration": 3,
+        "budget": 6600,
+        "people": 8
+      },
+      "parsed": {
+        "origin": "Valparaiso",
+        "destination": "Belleville",
+        "duration": 3,
+        "budget": 6600,
+        "people_number": 8,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 143,
+      "query_text": "Could you help me plan a 5-day journey for a group of 6, departing from Cleveland and visiting 2 cit...",
+      "ground_truth": {
+        "destination": "Florida",
+        "duration": 5,
+        "budget": 13900,
+        "people": 6
+      },
+      "parsed": {
+        "origin": "Cleveland",
+        "destination": "Florida",
+        "duration": 5,
+        "budget": 13900,
+        "people_number": 6,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 46,
+      "query_text": "Please help me craft a 7-day travel plan for one person departing from Charlotte in North Carolina, ...",
+      "ground_truth": {
+        "destination": "Pennsylvania",
+        "duration": 7,
+        "budget": 5100,
+        "people": 1
+      },
+      "parsed": {
+        "origin": "Charlotte",
+        "destination": "Pennsylvania",
+        "duration": 7,
+        "budget": 5100,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 17,
+      "query_text": "Can you help draft a 3-day travel plan, starting on March 1st, 2022 and ending on March 3rd, 2022, f...",
+      "ground_truth": {
+        "destination": "Washington",
+        "duration": 3,
+        "budget": 1500,
+        "people": 1
+      },
+      "parsed": {
+        "origin": "St. Louis",
+        "destination": "Washington",
+        "duration": 3,
+        "budget": 1500,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 52,
+      "query_text": "Could you help create a 7-day travel plan for one person departing from Wichita to Colorado that inc...",
+      "ground_truth": {
+        "destination": "Colorado",
+        "duration": 7,
+        "budget": 5900,
+        "people": 1
+      },
+      "parsed": {
+        "origin": "Wichita",
+        "destination": "Colorado",
+        "duration": 7,
+        "budget": 5900,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 126,
+      "query_text": "Could you construct a 3-day journey for two people from Chicago to Albany that takes place from Marc...",
+      "ground_truth": {
+        "destination": "Albany",
+        "duration": 3,
+        "budget": 2300,
+        "people": 2
+      },
+      "parsed": {
+        "origin": "Chicago",
+        "destination": "Albany",
+        "duration": 3,
+        "budget": 2300,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": false
+      }
+    },
+    {
+      "query_id": 97,
+      "query_text": "Can you assist in planning a 5-day travel itinerary for a party of 3 people from Manhattan heading t...",
+      "ground_truth": {
+        "destination": "Texas",
+        "duration": 5,
+        "budget": 3900,
+        "people": 3
+      },
+      "parsed": {
+        "origin": "Manhattan",
+        "destination": "Texas",
+        "duration": 5,
+        "budget": 3900,
+        "people_number": 3,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 57,
+      "query_text": "Could you assist in creating a 7-day travel itinerary, which begins in Kona and includes visits to 3...",
+      "ground_truth": {
+        "destination": "California",
+        "duration": 7,
+        "budget": 2500,
+        "people": 1
+      },
+      "parsed": {
+        "origin": null,
+        "destination": "California",
+        "duration": 7,
+        "budget": 2500,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 98,
+      "query_text": "Could you devise a 5-day travel itinerary for a group of 4, commencing in Bloomington and roaming in...",
+      "ground_truth": {
+        "destination": "Florida",
+        "duration": 5,
+        "budget": 15900,
+        "people": 4
+      },
+      "parsed": {
+        "origin": "Bloomington",
+        "destination": "Florida",
+        "duration": 5,
+        "budget": 15900,
+        "people_number": 4,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 121,
+      "query_text": "I need to organize a 3-day trip for a group of 3, departing from Asheville and arriving in Minneapol...",
+      "ground_truth": {
+        "destination": "Minneapolis",
+        "duration": 3,
+        "budget": 2300,
+        "people": 3
+      },
+      "parsed": {
+        "origin": null,
+        "destination": "Minneapolis",
+        "duration": 3,
+        "budget": 2300,
+        "people_number": 3,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 144,
+      "query_text": "Could you suggest a 5-day travel itinerary for 2, leaving from Charlotte and visiting 2 cities in Wi...",
+      "ground_truth": {
+        "destination": "Wisconsin",
+        "duration": 5,
+        "budget": 2500,
+        "people": 2
+      },
+      "parsed": {
+        "origin": "Charlotte",
+        "destination": "Wisconsin",
+        "duration": 5,
+        "budget": 2500,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": false
+      }
+    },
+    {
+      "query_id": 31,
+      "query_text": "Can you help me devise a 5-day travel plan starting from Cedar Rapids and covering 2 cities in Color...",
+      "ground_truth": {
+        "destination": "Colorado",
+        "duration": 5,
+        "budget": 4300,
+        "people": 1
+      },
+      "parsed": {
+        "origin": "Cedar Rapids",
+        "destination": "Colorado",
+        "duration": 5,
+        "budget": 4300,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 10,
+      "query_text": "Could you help me create a travel plan starting from Minneapolis to St. Louis, spanning 3 days from ...",
+      "ground_truth": {
+        "destination": "St. Louis",
+        "duration": 3,
+        "budget": 1000,
+        "people": 1
+      },
+      "parsed": {
+        "origin": "Minneapolis",
+        "destination": "St. Louis",
+        "duration": 3,
+        "budget": 1000,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 173,
+      "query_text": "I am interested in a 7-day travel plan for two people, starting from Fort Lauderdale and covering th...",
+      "ground_truth": {
+        "destination": "Louisiana",
+        "duration": 7,
+        "budget": 4400,
+        "people": 2
+      },
+      "parsed": {
+        "origin": "Fort Lauderdale",
+        "destination": "Louisiana",
+        "duration": 7,
+        "budget": 4400,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": false
+      }
+    },
+    {
+      "query_id": 61,
+      "query_text": "Could you construct a 3-day travel plan, starting in New York and ending in Reno, for 4 people, incl...",
+      "ground_truth": {
+        "destination": "Reno",
+        "duration": 3,
+        "budget": 11300,
+        "people": 4
+      },
+      "parsed": {
+        "origin": "New York",
+        "destination": "Reno",
+        "duration": 3,
+        "budget": 11300,
+        "people_number": 4,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 19,
+      "query_text": "Could you assist in creating a travel plan for one person departing from Seattle and visiting San Fr...",
+      "ground_truth": {
+        "destination": "San Francisco",
+        "duration": 3,
+        "budget": 900,
+        "people": 1
+      },
+      "parsed": {
+        "origin": "Seattle",
+        "destination": "San Francisco",
+        "duration": 3,
+        "budget": 900,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 149,
+      "query_text": "Can you provide a travel plan for our group of 3 from Myrtle Beach to Massachusetts, visiting 2 citi...",
+      "ground_truth": {
+        "destination": "Massachusetts",
+        "duration": 5,
+        "budget": 3800,
+        "people": 3
+      },
+      "parsed": {
+        "origin": "Myrtle Beach",
+        "destination": "Massachusetts",
+        "duration": 3,
+        "budget": 3800,
+        "people_number": 3,
+        "interests": [
+          "beach"
+        ],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": false,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 174,
+      "query_text": "I'm helping you plan a 7-day trip for two people from North Platte to Colorado, exploring three citi...",
+      "ground_truth": {
+        "destination": "Colorado",
+        "duration": 7,
+        "budget": 6500,
+        "people": 2
+      },
+      "parsed": {
+        "origin": "North Platte",
+        "destination": "Colorado",
+        "duration": 7,
+        "budget": 6500,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": false
+      }
+    },
+    {
+      "query_id": 110,
+      "query_text": "Can you help me create a 7-day travel itinerary for 2 people, starting from Miami, visiting 3 differ...",
+      "ground_truth": {
+        "destination": "California",
+        "duration": 7,
+        "budget": 7200,
+        "people": 2
+      },
+      "parsed": {
+        "origin": "Miami",
+        "destination": "California",
+        "duration": 7,
+        "budget": 7200,
+        "people_number": 2,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 56,
+      "query_text": "I need to plan a 7-day solo trip starting in Los Angeles and including visits to 3 different cities ...",
+      "ground_truth": {
+        "destination": "Florida",
+        "duration": 7,
+        "budget": 4700,
+        "people": 1
+      },
+      "parsed": {
+        "origin": "Los Angeles",
+        "destination": "Florida",
+        "duration": 7,
+        "budget": 4700,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 141,
+      "query_text": "Could you assist with a 5-day travel plan for a duo beginning from Las Vegas and proceeding to visit...",
+      "ground_truth": {
+        "destination": "Texas",
+        "duration": 5,
+        "budget": 3700,
+        "people": 2
+      },
+      "parsed": {
+        "origin": "Las Vegas",
+        "destination": "Texas",
+        "duration": 5,
+        "budget": 3700,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": false
+      }
+    },
+    {
+      "query_id": 127,
+      "query_text": "Can you help put together a 3-day travel plan for a group of 3, leaving from Daytona Beach and headi...",
+      "ground_truth": {
+        "destination": "Atlanta",
+        "duration": 3,
+        "budget": 2100,
+        "people": 3
+      },
+      "parsed": {
+        "origin": "Daytona Beach",
+        "destination": "Atlanta",
+        "duration": 3,
+        "budget": 2100,
+        "people_number": 3,
+        "interests": [
+          "beach"
+        ],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 67,
+      "query_text": "Can you assist in creating a travel itinerary departing Baton Rouge and heading to Dallas for a dura...",
+      "ground_truth": {
+        "destination": "Dallas",
+        "duration": 3,
+        "budget": 5500,
+        "people": 4
+      },
+      "parsed": {
+        "origin": "Baton Rouge",
+        "destination": "Dallas",
+        "duration": 3,
+        "budget": 5500,
+        "people_number": 4,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 30,
+      "query_text": "Can you help me devise a travel plan that begins in Key West and covers 2 cities in Indiana? The tra...",
+      "ground_truth": {
+        "destination": "Indiana",
+        "duration": 5,
+        "budget": 2000,
+        "people": 1
+      },
+      "parsed": {
+        "origin": null,
+        "destination": "Indiana",
+        "duration": 2,
+        "budget": 2000,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": false,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 118,
+      "query_text": "We are looking for a 7-day trip from St. Louis to Pennsylvania, touring 3 cities from the 23rd to th...",
+      "ground_truth": {
+        "destination": "Pennsylvania",
+        "duration": 7,
+        "budget": 7200,
+        "people": 2
+      },
+      "parsed": {
+        "origin": "St. Louis",
+        "destination": "Pennsylvania",
+        "duration": 7,
+        "budget": 7200,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": false
+      }
+    },
+    {
+      "query_id": 66,
+      "query_text": "Could you please design a 3-day travel plan for a group of 5, departing from Manchester and heading ...",
+      "ground_truth": {
+        "destination": "Charlotte",
+        "duration": 3,
+        "budget": 4800,
+        "people": 5
+      },
+      "parsed": {
+        "origin": "Manchester",
+        "destination": "Charlotte",
+        "duration": 3,
+        "budget": 4800,
+        "people_number": 5,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 68,
+      "query_text": "Could you help design a 3-day trip for a group of 4 from Las Vegas to Santa Maria from March 10th to...",
+      "ground_truth": {
+        "destination": "Santa Maria",
+        "duration": 3,
+        "budget": 3700,
+        "people": 4
+      },
+      "parsed": {
+        "origin": "Las Vegas",
+        "destination": "Santa Maria",
+        "duration": 3,
+        "budget": 3700,
+        "people_number": 4,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 32,
+      "query_text": "Can you assist in creating a 5-day long itinerary? I am planning to leave Omaha on March 2nd, 2022, ...",
+      "ground_truth": {
+        "destination": "Washington",
+        "duration": 5,
+        "budget": 5000,
+        "people": 1
+      },
+      "parsed": {
+        "origin": "Omaha",
+        "destination": "Washington",
+        "duration": 5,
+        "budget": 5000,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 13,
+      "query_text": "Can you assist with a travel plan for one person departing from Pittsburgh to Baltimore for 3 days, ...",
+      "ground_truth": {
+        "destination": "Baltimore",
+        "duration": 3,
+        "budget": 1200,
+        "people": 1
+      },
+      "parsed": {
+        "origin": "Pittsburgh",
+        "destination": "Baltimore",
+        "duration": 3,
+        "budget": 1200,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 42,
+      "query_text": "Could you construct a week-long travel plan for me, beginning in Bakersfield and heading to Texas? T...",
+      "ground_truth": {
+        "destination": "Texas",
+        "duration": 7,
+        "budget": 6100,
+        "people": 1
+      },
+      "parsed": {
+        "origin": "Bakersfield",
+        "destination": "Texas",
+        "duration": 3,
+        "budget": 6100,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": false,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 125,
+      "query_text": "Can you please generate a 3-day travel plan for 2 people departing from New York and traveling to Ch...",
+      "ground_truth": {
+        "destination": "Charleston",
+        "duration": 3,
+        "budget": 1600,
+        "people": 2
+      },
+      "parsed": {
+        "origin": "New York",
+        "destination": "Charleston",
+        "duration": 3,
+        "budget": 1600,
+        "people_number": 2,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 101,
+      "query_text": "Can you create a one-week travel itinerary for two people departing from Myrtle Beach and covering t...",
+      "ground_truth": {
+        "destination": "Michigan",
+        "duration": 7,
+        "budget": 8300,
+        "people": 2
+      },
+      "parsed": {
+        "origin": "Myrtle Beach",
+        "destination": "Michigan",
+        "duration": null,
+        "budget": 8300,
+        "people_number": 1,
+        "interests": [
+          "beach"
+        ],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": false,
+        "budget": true,
+        "people": false
+      }
+    },
+    {
+      "query_id": 162,
+      "query_text": "Could you design a one-week travel itinerary for two, departing from Houston and touring three citie...",
+      "ground_truth": {
+        "destination": "Tennessee",
+        "duration": 7,
+        "budget": 8200,
+        "people": 2
+      },
+      "parsed": {
+        "origin": "Houston",
+        "destination": "Tennessee",
+        "duration": null,
+        "budget": 8200,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": false,
+        "budget": true,
+        "people": false
+      }
+    },
+    {
+      "query_id": 133,
+      "query_text": "Consider a travel plan departing from Houston to Pensacola for a period of 3 days, from March 12th t...",
+      "ground_truth": {
+        "destination": "Pensacola",
+        "duration": 3,
+        "budget": 1100,
+        "people": 2
+      },
+      "parsed": {
+        "origin": null,
+        "destination": "Houston",
+        "duration": 3,
+        "budget": 1100,
+        "people_number": 2,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": false,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 91,
+      "query_text": "Can you please generate a 5-day travel plan for a party of 3, departing from Omaha and visiting 2 ci...",
+      "ground_truth": {
+        "destination": "Michigan",
+        "duration": 5,
+        "budget": 7500,
+        "people": 3
+      },
+      "parsed": {
+        "origin": "Omaha",
+        "destination": "Michigan",
+        "duration": 5,
+        "budget": 7500,
+        "people_number": 3,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 39,
+      "query_text": "Could you organize a 5-day travel plan leaving from Killeen and visiting 2 cities in Texas from Marc...",
+      "ground_truth": {
+        "destination": "Texas",
+        "duration": 5,
+        "budget": 3500,
+        "people": 1
+      },
+      "parsed": {
+        "origin": null,
+        "destination": "Texas",
+        "duration": 5,
+        "budget": 3500,
+        "people_number": 1,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 170,
+      "query_text": "Could you propose a one-week travel itinerary for 4 people, leaving from Seattle and heading to Flor...",
+      "ground_truth": {
+        "destination": "Florida",
+        "duration": 7,
+        "budget": 14700,
+        "people": 4
+      },
+      "parsed": {
+        "origin": "Seattle",
+        "destination": "Florida",
+        "duration": 4,
+        "budget": 14700,
+        "people_number": 4,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": false,
+        "budget": true,
+        "people": true
+      }
+    },
+    {
+      "query_id": 116,
+      "query_text": "We're looking for a 7-day travel plan for a group of 5. We'll be departing from Provo and intend to ...",
+      "ground_truth": {
+        "destination": "California",
+        "duration": 7,
+        "budget": 14900,
+        "people": 5
+      },
+      "parsed": {
+        "origin": "Provo",
+        "destination": "California",
+        "duration": 7,
+        "budget": 14900,
+        "people_number": 5,
+        "interests": [],
+        "constraints": {}
+      },
+      "correct": {
+        "destination": true,
+        "duration": true,
+        "budget": true,
+        "people": true
+      }
+    }
+  ],
+  "metrics": {
+    "destination_accuracy": 98.0,
+    "duration_accuracy": 88.0,
+    "budget_accuracy": 100.0,
+    "people_accuracy": 76.0,
+    "overall_accuracy": 90.5
+  }
+}

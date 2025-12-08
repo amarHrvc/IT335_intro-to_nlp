@@ -1,0 +1,444 @@
+======================================================================
+PARSER RESULTS - DETAILED COMPARISON
+======================================================================
+
+
+Query 20:
+  Text: Could you assist with a 3-day travel itinerary starting from Providence to Orlando, with a visit pla...
+
+  GROUND TRUTH:
+    Destination: Orlando
+    Duration:    3 days
+    Budget:      $1800
+    People:      1
+
+  PARSED RESULT:
+    Destination: Orlando
+    Duration:    3 days
+    Budget:      $1800
+    People:      1
+
+  CORRECTNESS:
+    Destination: ✓ CORRECT
+    Duration:    ✓ CORRECT
+    Budget:      ✓ CORRECT
+    People:      ✓ CORRECT
+----------------------------------------------------------------------
+
+Query 43:
+  Text: Could you help me arrange a 7-day solo travel itinerary from Kona to California with a budget of $5,...
+
+  GROUND TRUTH:
+    Destination: California
+    Duration:    7 days
+    Budget:      $5800
+    People:      1
+
+  PARSED RESULT:
+    Destination: California
+    Duration:    7 days
+    Budget:      $5800
+    People:      1
+
+  CORRECTNESS:
+    Destination: ✓ CORRECT
+    Duration:    ✓ CORRECT
+    Budget:      ✓ CORRECT
+    People:      ✓ CORRECT
+----------------------------------------------------------------------
+
+Query 154:
+  Text: Could you create a 5-day travel plan for a couple leaving from Baton Rouge and visiting 2 cities in ...
+
+  GROUND TRUTH:
+    Destination: Texas
+    Duration:    5 days
+    Budget:      $2900
+    People:      2
+
+  PARSED RESULT:
+    Destination: Texas
+    Duration:    5 days
+    Budget:      $2900
+    People:      1
+
+  CORRECTNESS:
+    Destination: ✓ CORRECT
+    Duration:    ✓ CORRECT
+    Budget:      ✓ CORRECT
+    People:      ✗ INCORRECT
+----------------------------------------------------------------------
+
+Query 79:
+  Text: Create a travel plan for two people departing from Eugene and heading to Los Angeles. The trip will ...
+
+  GROUND TRUTH:
+    Destination: Los Angeles
+    Duration:    3 days
+    Budget:      $1700
+    People:      2
+
+  PARSED RESULT:
+    Destination: Los Angeles
+    Duration:    3 days
+    Budget:      $1700
+    People:      1
+
+  CORRECTNESS:
+    Destination: ✓ CORRECT
+    Duration:    ✓ CORRECT
+    Budget:      ✓ CORRECT
+    People:      ✗ INCORRECT
+----------------------------------------------------------------------
+
+Query 146:
+  Text: Can you help design a 5-day travel plan for a group of 4, starting from Evansville and visiting 2 ci...
+
+  GROUND TRUTH:
+    Destination: Texas
+    Duration:    5 days
+    Budget:      $9500
+    People:      4
+
+  PARSED RESULT:
+    Destination: Texas
+    Duration:    5 days
+    Budget:      $9500
+    People:      4
+
+  CORRECTNESS:
+    Destination: ✓ CORRECT
+    Duration:    ✓ CORRECT
+    Budget:      ✓ CORRECT
+    People:      ✓ CORRECT
+----------------------------------------------------------------------
+
+Query 16:
+  Text: Could you help me organize a 3-day journey from Spokane to San Francisco from March 3rd to March 5th...
+
+  GROUND TRUTH:
+    Destination: San Francisco
+    Duration:    3 days
+    Budget:      $1200
+    People:      1
+
+  PARSED RESULT:
+    Destination: San Francisco
+    Duration:    3 days
+    Budget:      $1200
+    People:      1
+
+  CORRECTNESS:
+    Destination: ✓ CORRECT
+    Duration:    ✓ CORRECT
+    Budget:      ✓ CORRECT
+    People:      ✓ CORRECT
+----------------------------------------------------------------------
+
+Query 25:
+  Text: Can you create a 5-day travel itinerary for a solo trip starting from Jacksonville and visiting 2 ci...
+
+  GROUND TRUTH:
+    Destination: Michigan
+    Duration:    5 days
+    Budget:      $4600
+    People:      1
+
+  PARSED RESULT:
+    Destination: Michigan
+    Duration:    5 days
+    Budget:      $4600
+    People:      1
+
+  CORRECTNESS:
+    Destination: ✓ CORRECT
+    Duration:    ✓ CORRECT
+    Budget:      ✓ CORRECT
+    People:      ✓ CORRECT
+----------------------------------------------------------------------
+
+Query 69:
+  Text: Please create a 3-day travel plan for two people, departing from Panama City and heading to Nashvill...
+
+  GROUND TRUTH:
+    Destination: Nashville
+    Duration:    3 days
+    Budget:      $2900
+    People:      2
+
+  PARSED RESULT:
+    Destination: Nashville
+    Duration:    3 days
+    Budget:      $2900
+    People:      1
+
+  CORRECTNESS:
+    Destination: ✓ CORRECT
+    Duration:    ✓ CORRECT
+    Budget:      ✓ CORRECT
+    People:      ✗ INCORRECT
+----------------------------------------------------------------------
+
+Query 114:
+  Text: Could you design a 7-day travel plan starting March 11th and ending March 17th, 2022, for a group of...
+
+  GROUND TRUTH:
+    Destination: Colorado
+    Duration:    7 days
+    Budget:      $16300
+    People:      7
+
+  PARSED RESULT:
+    Destination: Colorado
+    Duration:    7 days
+    Budget:      $16300
+    People:      7
+
+  CORRECTNESS:
+    Destination: ✓ CORRECT
+    Duration:    ✓ CORRECT
+    Budget:      ✓ CORRECT
+    People:      ✓ CORRECT
+----------------------------------------------------------------------
+
+Query 119:
+  Text: Could you craft a 7-day travel itinerary for a group of three starting in Peoria and planning to vis...
+
+  GROUND TRUTH:
+    Destination: Illinois
+    Duration:    7 days
+    Budget:      $8400
+    People:      3
+
+  PARSED RESULT:
+    Destination: Illinois
+    Duration:    7 days
+    Budget:      $8400
+    People:      1
+
+  CORRECTNESS:
+    Destination: ✓ CORRECT
+    Duration:    ✓ CORRECT
+    Budget:      ✓ CORRECT
+    People:      ✗ INCORRECT
+----------------------------------------------------------------------
+
+Query 94:
+  Text: Could you create a 5-day travel plan for 2 people departing from Richmond to visit 2 cities in Texas...
+
+  GROUND TRUTH:
+    Destination: Texas
+    Duration:    5 days
+    Budget:      $6000
+    People:      2
+
+  PARSED RESULT:
+    Destination: Texas
+    Duration:    5 days
+    Budget:      $6000
+    People:      2
+
+  CORRECTNESS:
+    Destination: ✓ CORRECT
+    Duration:    ✓ CORRECT
+    Budget:      ✓ CORRECT
+    People:      ✓ CORRECT
+----------------------------------------------------------------------
+
+Query 160:
+  Text: Could you help me organize a 5-day trip for 2 people starting from Islip to Pennsylvania, covering 2...
+
+  GROUND TRUTH:
+    Destination: Pennsylvania
+    Duration:    5 days
+    Budget:      $2700
+    People:      2
+
+  PARSED RESULT:
+    Destination: Pennsylvania
+    Duration:    5 days
+    Budget:      $2700
+    People:      2
+
+  CORRECTNESS:
+    Destination: ✓ CORRECT
+    Duration:    ✓ CORRECT
+    Budget:      ✓ CORRECT
+    People:      ✓ CORRECT
+----------------------------------------------------------------------
+
+Query 70:
+  Text: Could you create a 3-day travel itinerary for a group of 8, departing from Valparaiso and moving to ...
+
+  GROUND TRUTH:
+    Destination: Belleville
+    Duration:    3 days
+    Budget:      $6600
+    People:      8
+
+  PARSED RESULT:
+    Destination: Belleville
+    Duration:    3 days
+    Budget:      $6600
+    People:      8
+
+  CORRECTNESS:
+    Destination: ✓ CORRECT
+    Duration:    ✓ CORRECT
+    Budget:      ✓ CORRECT
+    People:      ✓ CORRECT
+----------------------------------------------------------------------
+
+Query 143:
+  Text: Could you help me plan a 5-day journey for a group of 6, departing from Cleveland and visiting 2 cit...
+
+  GROUND TRUTH:
+    Destination: Florida
+    Duration:    5 days
+    Budget:      $13900
+    People:      6
+
+  PARSED RESULT:
+    Destination: Florida
+    Duration:    5 days
+    Budget:      $13900
+    People:      6
+
+  CORRECTNESS:
+    Destination: ✓ CORRECT
+    Duration:    ✓ CORRECT
+    Budget:      ✓ CORRECT
+    People:      ✓ CORRECT
+----------------------------------------------------------------------
+
+Query 46:
+  Text: Please help me craft a 7-day travel plan for one person departing from Charlotte in North Carolina, ...
+
+  GROUND TRUTH:
+    Destination: Pennsylvania
+    Duration:    7 days
+    Budget:      $5100
+    People:      1
+
+  PARSED RESULT:
+    Destination: Pennsylvania
+    Duration:    7 days
+    Budget:      $5100
+    People:      1
+
+  CORRECTNESS:
+    Destination: ✓ CORRECT
+    Duration:    ✓ CORRECT
+    Budget:      ✓ CORRECT
+    People:      ✓ CORRECT
+----------------------------------------------------------------------
+
+Query 17:
+  Text: Can you help draft a 3-day travel plan, starting on March 1st, 2022 and ending on March 3rd, 2022, f...
+
+  GROUND TRUTH:
+    Destination: Washington
+    Duration:    3 days
+    Budget:      $1500
+    People:      1
+
+  PARSED RESULT:
+    Destination: Washington
+    Duration:    3 days
+    Budget:      $1500
+    People:      1
+
+  CORRECTNESS:
+    Destination: ✓ CORRECT
+    Duration:    ✓ CORRECT
+    Budget:      ✓ CORRECT
+    People:      ✓ CORRECT
+----------------------------------------------------------------------
+
+Query 52:
+  Text: Could you help create a 7-day travel plan for one person departing from Wichita to Colorado that inc...
+
+  GROUND TRUTH:
+    Destination: Colorado
+    Duration:    7 days
+    Budget:      $5900
+    People:      1
+
+  PARSED RESULT:
+    Destination: Colorado
+    Duration:    7 days
+    Budget:      $5900
+    People:      1
+
+  CORRECTNESS:
+    Destination: ✓ CORRECT
+    Duration:    ✓ CORRECT
+    Budget:      ✓ CORRECT
+    People:      ✓ CORRECT
+----------------------------------------------------------------------
+
+Query 126:
+  Text: Could you construct a 3-day journey for two people from Chicago to Albany that takes place from Marc...
+
+  GROUND TRUTH:
+    Destination: Albany
+    Duration:    3 days
+    Budget:      $2300
+    People:      2
+
+  PARSED RESULT:
+    Destination: Albany
+    Duration:    3 days
+    Budget:      $2300
+    People:      1
+
+  CORRECTNESS:
+    Destination: ✓ CORRECT
+    Duration:    ✓ CORRECT
+    Budget:      ✓ CORRECT
+    People:      ✗ INCORRECT
+----------------------------------------------------------------------
+
+Query 97:
+  Text: Can you assist in planning a 5-day travel itinerary for a party of 3 people from Manhattan heading t...
+
+  GROUND TRUTH:
+    Destination: Texas
+    Duration:    5 days
+    Budget:      $3900
+    People:      3
+
+  PARSED RESULT:
+    Destination: Texas
+    Duration:    5 days
+    Budget:      $3900
+    People:      3
+
+  CORRECTNESS:
+    Destination: ✓ CORRECT
+    Duration:    ✓ CORRECT
+    Budget:      ✓ CORRECT
+    People:      ✓ CORRECT
+----------------------------------------------------------------------
+
+Query 57:
+  Text: Could you assist in creating a 7-day travel itinerary, which begins in Kona and includes visits to 3...
+
+  GROUND TRUTH:
+    Destination: California
+    Duration:    7 days
+    Budget:      $2500
+    People:      1
+
+  PARSED RESULT:
+    Destination: California
+    Duration:    7 days
+    Budget:      $2500
+    People:      1
+
+  CORRECTNESS:
+    Destination: ✓ CORRECT
+    Duration:    ✓ CORRECT
+    Budget:      ✓ CORRECT
+    People:      ✓ CORRECT
+----------------------------------------------------------------------
