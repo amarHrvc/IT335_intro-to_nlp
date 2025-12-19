@@ -1,0 +1,31 @@
+# Travel Itinerary Generator - Dependencies
+# Milestone 3 - IT_335 NLP Course
+
+# Core NLP
+spacy>=3.7.0
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.0/en_core_web_sm-3.7.0-py3-none-any.whl
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# LLM Providers (Optional - system works without these)
+openai>=1.0.0
+anthropic>=0.7.0
+
+# Configuration
+python-dotenv>=1.0.0
+
+# HTTP Requests (for Ollama)
+requests>=2.31.0
+
+# Utilities
+pydantic>=2.0.0
+
+# Testing (Optional)
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Notebooks (Optional - for exploration)
+jupyter>=1.0.0
+ipykernel>=6.25.0

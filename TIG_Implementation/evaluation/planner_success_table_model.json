@@ -1,0 +1,11 @@
+{
+  "title": "Planner Success Distribution",
+  "headers": ["Success Level", "Count", "Percentage"],
+  "rows": [
+    ["Complete (5/5)", "46", "92.0%"],
+    ["Partial (3-4/5)", "4", "8.0%"],
+    ["Failed (0-2/5)", "0", "0.0%"]
+  ],
+  "footer": ["Total", "50", "100.0%"],
+  "charts": ["bar", "pie"]
+}

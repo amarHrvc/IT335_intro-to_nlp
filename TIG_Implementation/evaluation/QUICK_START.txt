@@ -1,0 +1,179 @@
+===============================================================================
+                    PARSER EVALUATOR - QUICK START GUIDE
+===============================================================================
+
+WHAT YOU NEED:
+  - Python 3.6+
+  - pandas library (pip install pandas)
+  - spacy library (for parser)
+  - TravelPlanner_cleaned/validation_cleaned.csv (preferred)
+    OR TravelPlanner/validation.csv (fallback)
+
+===============================================================================
+
+STEP 1: TEST YOUR SETUP
+  
+  cd TIG_Implementation/evaluation
+  python test_simple.py
+
+  → If all tests pass (✓), go to Step 2
+  → If any test fails (✗), fix it first
+
+===============================================================================
+
+STEP 2: RUN THE EVALUATION
+
+  python evaluate_parser.py
+
+  → Wait 1-2 minutes while it evaluates 50 queries
+  → You'll see progress messages
+  → Results will be displayed and saved
+
+===============================================================================
+
+STEP 3: CHECK RESULTS
+
+  Look in the "results/" folder for 3 files:
+
+  1. parser_results_TIMESTAMP.json      ← Full data
+  2. parser_summary_TIMESTAMP.txt       ← Quick summary
+  3. parser_comparison_TIMESTAMP.txt    ← Detailed comparison
+
+===============================================================================
+
+EXPECTED OUTPUT (Console):
+
+  ========================================================================
+                       PARSER EVALUATION - MILESTONE 4
+  ========================================================================
+
+  [STEP 1/5] Loading validation data...
+  ✓ Loaded 50 validation queries
+
+  [STEP 2/5] Evaluating queries...
+  Processing query 10/50...
+  Processing query 20/50...
+  ...
+  ✓ Evaluated all 50 queries
+
+  [STEP 3/5] Calculating accuracy metrics...
+  ✓ Metrics calculated
+
+  [STEP 4/5] Displaying results...
+
+  ======================================================================
+                           EVALUATION RESULTS
+  ======================================================================
+
+  Total Queries Evaluated: 50
+
+  ----------------------------------------------------------------------
+  ACCURACY BY FIELD:
+  ----------------------------------------------------------------------
+    Destination:  78.0%  (39/50 correct)
+    Duration:     92.0%  (46/50 correct)
+    Budget:       64.0%  (32/50 correct)
+    People Count: 88.0%  (44/50 correct)
+  ----------------------------------------------------------------------
+    OVERALL:      80.5%
+  ----------------------------------------------------------------------
+
+===============================================================================
+
+TROUBLESHOOTING:
+
+  Problem: "FileNotFoundError: validation_cleaned.csv"
+  Solution: Make sure TravelPlanner_cleaned folder exists 2 levels up
+           Script will fallback to TravelPlanner/validation.csv if needed
+
+  Problem: "ModuleNotFoundError: pandas"
+  Solution: pip install pandas
+
+  Problem: "ModuleNotFoundError: spacy"
+  Solution: pip install spacy
+           python -m spacy download en_core_web_sm
+
+  Problem: Script takes forever
+  Solution: Edit evaluate_parser.py, change sample_size=50 to sample_size=10
+
+===============================================================================
+
+WHAT'S NEXT:
+
+  1. Use the results to create tables (Task 2.1)
+  2. Use the results to create charts (Task 2.2)
+  3. Copy this script to create evaluate_planner.py (Task 1.2)
+  4. Write results section in your paper (Task 3.1)
+
+===============================================================================
+
+FILES IN THIS FOLDER:
+
+  evaluate_parser.py     ← Main script (RUN THIS)
+  test_simple.py         ← Test your setup first
+  README.md              ← Detailed documentation
+  INSTRUCTIONS.md        ← Step-by-step guide
+  QUICK_START.txt        ← This file
+  results/               ← Output folder (created automatically)
+
+===============================================================================
+
+CODE STRUCTURE (evaluate_parser.py):
+
+  1. Import libraries (pandas, json, datetime)
+  2. ParserEvaluator class:
+     - __init__()               → Setup
+     - load_validation_data()   → Load CSV
+     - evaluate_single_query()  → Parse and check one query
+     - check_destination()      → Compare destination field
+     - check_duration()         → Compare duration field
+     - check_budget()           → Compare budget field
+     - check_people()           → Compare people field
+     - run_evaluation()         → Main workflow
+     - display_results()        → Show results in console
+     - save_results()           → Save 3 files
+  3. main() function → Creates evaluator and runs it
+
+===============================================================================
+
+UNDERSTANDING RESULTS:
+
+  Destination Accuracy: 78%
+  → Parser correctly identified city in 39 out of 50 queries
+
+  Duration Accuracy: 92%
+  → Parser correctly identified trip length in 46 out of 50 queries
+
+  Budget Accuracy: 64%
+  → Parser correctly identified budget in 32 out of 50 queries
+  → Note: 20% tolerance is allowed (e.g., $1000 vs $1200 is OK)
+
+  People Accuracy: 88%
+  → Parser correctly identified traveler count in 44 out of 50 queries
+
+  Overall Accuracy: 80.5%
+  → Average of all fields (161 correct out of 200 total checks)
+
+===============================================================================
+
+FOR MILESTONE 4 SUBMISSION:
+
+  ✓ This script = "Code used to find results" (Deliverable 1)
+  ✓ Result files in results/ folder
+  ✓ Use these numbers in your Results section (Deliverable 2)
+  ✓ Create tables and charts from this data
+
+===============================================================================
+
+NEED HELP?
+
+  1. Read the comments in evaluate_parser.py
+  2. Check README.md for more details
+  3. Read INSTRUCTIONS.md for step-by-step guide
+  4. Run test_simple.py to diagnose issues
+
+===============================================================================
+
+                              GOOD LUCK! 🚀
+
+===============================================================================

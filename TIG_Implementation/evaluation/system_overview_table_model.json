@@ -1,0 +1,10 @@
+{
+  "title": "TIG System Performance Summary",
+  "headers": ["Component", "Metric", "Score"],
+  "rows": [
+    ["Parser", "Overall Accuracy", "90.5%"],
+    ["Planner", "Success Rate", "100.0%"],
+    ["System", "Complete Rate", "92.0%"]
+  ],
+  "charts": ["bar"]
+}

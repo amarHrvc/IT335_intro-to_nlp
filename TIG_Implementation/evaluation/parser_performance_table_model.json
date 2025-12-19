@@ -1,0 +1,12 @@
+{
+  "title": "Parser Accuracy by Field",
+  "headers": ["Field", "Accuracy %", "Correct", "Total"],
+  "rows": [
+    ["Destination", "98.0", "49", "50"],
+    ["Duration", "88.0", "44", "50"],
+    ["Budget", "100.0", "50", "50"],
+    ["People Count", "76.0", "38", "50"]
+  ],
+  "footer": ["Overall", "90.5", "181", "200"],
+  "charts": ["bar"]
+}
