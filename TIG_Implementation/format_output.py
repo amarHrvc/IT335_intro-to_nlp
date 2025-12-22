@@ -100,7 +100,7 @@ def format_itinerary_to_text(json_file: str, output_file: str = None):
         # Handle different formats
         if isinstance(day_data, dict):
             # Time-based format (Morning, Afternoon, Evening)
-            for time_period in ['Morning', 'Afternoon', 'Evening']:
+            for time_period in ['Morning', 'Afternoon', 'Evening', 'Lunch', 'Dinner']:
                 if time_period in day_data:
                     lines.append(f"🕐 {time_period.upper()}")
                     period_data = day_data[time_period]
@@ -120,6 +120,12 @@ def format_itinerary_to_text(json_file: str, output_file: str = None):
                     else:
                         lines.append(f"   {period_data}")
                     lines.append("")
+
+            if 'Accommodation' in day_data:
+                lines.append(f"🏨 ACCOMMODATION")
+                lines.append(f"   {day_data['Accommodation']}")
+                lines.append("")
+
             
             # Activity-based format (Activity 1, Activity 2, etc.)
             activities = sorted([k for k in day_data.keys() if k.startswith('Activity')],

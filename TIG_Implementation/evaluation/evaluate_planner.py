@@ -683,7 +683,7 @@ def main():
     print("=" * 70)
 
     # Create evaluator (change sample_size here if you want different amount)
-    evaluator = PlannerEvaluator(sample_size=2)
+    evaluator = PlannerEvaluator(sample_size=3)
 
     # Run evaluation
     evaluator.run_evaluation()

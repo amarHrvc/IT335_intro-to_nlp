@@ -15,10 +15,15 @@ class TravelDataSet:
      - accessing city-specific data
     """
     
-    def __init__(self, data_dir: str = "../../TravelPlanner_cleaned"):
+    def __init__(self, data_dir: Optional[str] = None):
         """Initialize dataset loader"""
         print("Loading TravelPlanner dataset...")
-        self.data_dir = Path(data_dir)
+        # Resolve data directory relative to project root (2 levels up from this file)
+        if data_dir is None:
+            project_root = Path(__file__).resolve().parents[2]
+            self.data_dir = project_root / "TravelPlanner_cleaned"
+        else:
+            self.data_dir = Path(data_dir)
         print(f"  Data directory: {self.data_dir.absolute()}")
         self.train_df = self._load_train_data()
         self.cities = self._load_cities()
@@ -27,6 +32,7 @@ class TravelDataSet:
     def _load_train_data(self) -> pd.DataFrame:
         """Load training data from CSV file"""
         train_path = self.data_dir / "train_cleaned.csv"
+        print(":::::::::::: _load_train_data path ::::::::::::", train_path)
         if not train_path.exists():
             print(f"⚠ Warning: {train_path} not found")
             print("  Creating empty DataFrame for development")
@@ -69,6 +75,8 @@ class TravelDataSet:
         
 
         if self.train_df.empty:
+            train_path = self.data_dir / "train_cleaned.csv"
+            print(":::::::::::: _load_train_data path ::::::::::::", train_path)
             print("⚠ Warning: No training data loaded")
             return []
 
