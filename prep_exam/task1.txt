@@ -1,0 +1,17 @@
+Subject: Team Meeting Reminder
+
+Hello Team,
+
+This is a reminder about the upcoming team meeting scheduled for next Monday at 10:00 AM in Conference Room A. Please review the project documentation before the meeting. You can find the files here: project_docs_v3.pdf.
+
+Agenda:
+1. Project progress updates.
+2. Discussion on upcoming deadlines.
+3. Q&A session.
+
+If you have any questions, feel free to reach out to the project manager at manager@example.com or the assistant at assistant@example.org.
+
+Best regards,  
+John Doe  
+Team Lead  
+john.doe@example.com
